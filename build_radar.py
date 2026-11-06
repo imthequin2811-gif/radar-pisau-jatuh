@@ -147,7 +147,7 @@ def calculate(candles: list[dict], wma_length: int) -> None:
         prevprev = candles[i - 2]["wma"] if i >= 2 else None
         candle["delta"] = candle["wma"] - prev if prev is not None and candle["wma"] is not None else None
         candle["delta2"] = candle["wma"] - 2 * prev + prevprev if prevprev is not None and prev is not None and candle["wma"] is not None else None
-        candle["angle"] = math.degrees(math.atan(candle["delta"] / 20)) if candle["delta"] is not None else None
+        candle["angle"] = math.degrees(math.atan(candle["delta"] / 100)) if candle["delta"] is not None else None
         candle["angle_change"] = candle["angle"] - candles[i - 1]["angle"] if i and candles[i - 1]["angle"] is not None and candle["angle"] is not None else None
         candle["arrow"] = arrow(candle["delta"], candle["delta2"])
 
