@@ -1,0 +1,43 @@
+name: Forex 12D Always Long vs Short With Margin Stress
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'forex_model_a/backtest_12d_always_long_short.py'
+      - '.github/workflows/forex_12d_always_long_short.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  long-short-12d:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Python dependencies
+        run: pip install -r forex_model_a/requirements.txt
+      - name: Run 12D always LONG vs SHORT 1x 2x 10x
+        working-directory: forex_model_a
+        run: python -u backtest_12d_always_long_short.py
+      - name: Publish output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add forex_model_a/forex_12d_long_vs_short_results/
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish Forex 12D always long versus short backtest"
+            git pull --rebase
+            git push
+          fi
