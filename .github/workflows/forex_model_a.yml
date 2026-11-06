@@ -28,17 +28,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r forex_model_a/requirements.txt
 
-      - name: Run Model A Forex backtest
+      - name: Run Model A Forex monthly CCI20 WMA5 backtest
         working-directory: forex_model_a
-        run: python backtest_model_a_forex.py
+        run: python backtest_model_a_monthly.py
 
       - name: Save results to GitHub
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add forex_model_a/model_a_results/
+          git add forex_model_a/model_a_monthly_results/
           if ! git diff --cached --quiet; then
-            git commit -m "Auto update Forex Model A results"
+            git commit -m "Auto update Forex Model A monthly results"
             git push
           else
             echo "No changes to save"
