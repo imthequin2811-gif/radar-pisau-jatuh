@@ -1,0 +1,4 @@
+strategy,trades,winrate_pct,avg_R,total_R,profit_factor,max_drawdown_R
+BENCHMARK_IN_COMBINED_STRATEGY,39,23.1,-0.205,-8.0,0.742,-18.44
+ORIGINAL_SWEEP_ONLY,46,21.7,-0.172,-7.91,0.786,-18.35
+INVERTED,41,24.4,-0.307,-12.6,0.6,-12.6
