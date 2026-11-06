@@ -146,7 +146,7 @@ def main():
                                    **performance(yy)))
             if not t.empty:
                 last=t.iloc[-1].to_dict()
-                latest.append(dict(pair=pair.upper(),rr_target=rr,**last))
+                latest.append(dict(pair=pair.upper(),**last))
             print(f"{pair.upper()} target={rr}R months={len(t)} "
                   f"total={performance(t)['total_R']}R",flush=True)
     pd.DataFrame(summary).to_csv(RESULTS/"summary.csv",index=False)
