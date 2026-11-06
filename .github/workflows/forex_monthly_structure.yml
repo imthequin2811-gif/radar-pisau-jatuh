@@ -1,0 +1,43 @@
+name: Backtest Monthly Structure Forex
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'forex_model_a/backtest_monthly_structure.py'
+      - '.github/workflows/forex_monthly_structure.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  monthly-structure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Setup Node for Dukascopy
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: pip install -r forex_model_a/requirements.txt
+      - name: Run pure monthly structure backtest
+        working-directory: forex_model_a
+        run: python -u backtest_monthly_structure.py
+      - name: Commit CSV output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add forex_model_a/monthly_structure_results/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update pure monthly Forex structure backtest"
+            git pull --rebase
+            git push
+          fi
