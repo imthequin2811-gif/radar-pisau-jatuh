@@ -1,0 +1,43 @@
+name: Forex 12D CCI18 WMA7 Mandatory Entry 20x Stress
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'forex_model_a/backtest_12d_cci18_wma7.py'
+      - '.github/workflows/forex_12d_cci18_wma7.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  test-12d:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Node for Dukascopy
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install requirements
+        run: pip install -r forex_model_a/requirements.txt
+      - name: Backtest CCI18 WMA7 12D
+        working-directory: forex_model_a
+        run: python -u backtest_12d_cci18_wma7.py
+      - name: Publish backtest result CSV
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add forex_model_a/forex_12d_cci18_wma7_results/
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish 12D CCI18 WMA7 Forex backtest"
+            git pull --rebase
+            git push
+          fi
