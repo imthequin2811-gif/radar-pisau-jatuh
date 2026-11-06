@@ -1,0 +1,43 @@
+name: Test GBPUSD Weekly Mixed Inversion
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'forex_model_a/backtest_gbpusd_mixed_inversion.py'
+      - '.github/workflows/forex_gbpusd_mixed_inversion.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  gbpusd-inversion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: pip install -r forex_model_a/requirements.txt
+      - name: Backtest matched and independent variants
+        working-directory: forex_model_a
+        run: python -u backtest_gbpusd_mixed_inversion.py
+      - name: Publish CSV results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add forex_model_a/weekly_mixed_inversion_results/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update GBPUSD weekly mixed inversion results"
+            git pull --rebase
+            git push
+          fi
