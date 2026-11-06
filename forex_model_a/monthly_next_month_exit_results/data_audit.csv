@@ -1,0 +1,4 @@
+pair,first_daily_utc,last_daily_utc,months_with_daily_data,valid_completed_months,simulated_trades
+EURUSD,2017-01-02 00:00:00+00:00,2026-11-05 00:00:00+00:00,118,118,53
+GBPUSD,2017-01-02 00:00:00+00:00,2026-11-05 00:00:00+00:00,118,118,53
+USDCHF,2017-01-02 00:00:00+00:00,2026-11-05 00:00:00+00:00,118,118,52
