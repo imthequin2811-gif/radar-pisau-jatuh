@@ -1,0 +1,4 @@
+pair,trades,win_rate_pct,stop_rate_pct,total_R,net_pnl_usd,max_drawdown_R,profit_factor
+EURUSD,371,6.5,93.5,-170.31,-17030.58,-171.74,0.567
+GBPUSD,381,4.7,95.3,-103.86,-10386.47,-137.42,0.744
+USDCHF,375,6.1,93.9,-136.18,-13617.6,-148.38,0.669
