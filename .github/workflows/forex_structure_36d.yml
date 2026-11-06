@@ -1,0 +1,43 @@
+name: Backtest Forex 36D Structure vs Monthly
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'forex_model_a/backtest_structure_36d.py'
+      - '.github/workflows/forex_structure_36d.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  structure-36d:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Setup Node for Dukascopy
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: pip install -r forex_model_a/requirements.txt
+      - name: Run 36D backtest
+        working-directory: forex_model_a
+        run: python -u backtest_structure_36d.py
+      - name: Commit comparison CSVs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add forex_model_a/structure_36d_results/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Forex 36D structure test results"
+            git pull --rebase
+            git push
+          fi
