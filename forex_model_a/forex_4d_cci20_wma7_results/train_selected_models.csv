@@ -1,4 +1,4 @@
-pair,model,sizing,sl_price_pct,exit_rule,trades,initial_usd,final_usd,pnl_usd,return_pct,max_closed_dd_pct,win_pct,sl_pct,profit_factor,closeout,train_trades,train_return_pct,train_final_usd,test_trades,test_return_pct,test_final_usd
-EURUSD,INVERSE_WMA7_SLOPE,RISK_1PCT,1.0,CLOSE_4D,660,10000.0,9942.45,-57.55,-0.58,-16.43,50.5,14.8,0.997,False,428,0.56,10056.39,232,-1.13,9942.45
-GBPUSD,CCI_ZERO,RISK_1PCT,1.0,CLOSE_4D,660,10000.0,8475.45,-1524.55,-15.25,-20.85,45.8,21.5,0.929,False,428,-3.01,9699.21,232,-12.62,8475.45
-USDCHF,WMA7_SLOPE,RISK_1PCT,0.5,CLOSE_4D,660,10000.0,10189.19,189.19,1.89,-23.39,43.3,44.7,1.006,False,428,4.58,10457.87,232,-2.57,10189.19
+pair,model,sizing,sl_price_pct,exit_rule,trades,initial_usd,final_usd,pnl_usd,return_pct,max_closed_dd_pct,win_pct,sl_pct,profit_factor,closeout,train_trades,train_return_pct,train_final_usd,train_closed_dd_pct,max_intratrade_dd_pct,test_trades,test_return_pct,test_final_usd
+EURUSD,INVERSE_WMA7_SLOPE,RISK_1PCT,0.5,CLOSE_4D,714,10000.0,8594.76,-1405.24,-14.05,-41.4,43.4,44.7,0.965,False,455,1.36,10135.51,-34.37,-41.74,259,-15.2,8594.76
+GBPUSD,WMA7_SLOPE,RISK_1PCT,1.0,CLOSE_4D,714,10000.0,9524.67,-475.33,-4.75,-16.47,46.6,20.9,0.978,False,455,-4.86,9513.97,-14.56,-16.63,259,0.11,9524.67
+USDCHF,WMA7_SLOPE,RISK_1PCT,1.0,CLOSE_4D,714,10000.0,9932.89,-67.11,-0.67,-15.42,48.9,16.7,0.997,False,455,0.21,10020.99,-15.42,-16.02,259,-0.88,9932.89
