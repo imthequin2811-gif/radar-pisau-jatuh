@@ -202,7 +202,8 @@ def simulate(pair,d,b,model,sizing,stop_frac,exit_rule):
             "equity_before":equity_before,"equity_after":equity,
             "pnl_usd":equity-equity_before,
             "pnl_pct_of_entry_equity":(equity/equity_before-1)*100,
-            "risk_usd_if_stop":abs(marked_pnl(pair,units,side,entry,stop))
+            "risk_usd_if_stop":abs(marked_pnl(pair,units,side,entry,stop)),
+            "intratrade_dd_pct_running":dd_min_pct
         })
         if closeout or equity<=0: break
     return trades
@@ -257,6 +258,9 @@ def main():
                              train_trades=perf_train["trades"],
                              train_return_pct=perf_train["return_pct"],
                              train_final_usd=perf_train["final_usd"],
+                             train_closed_dd_pct=perf_train["max_closed_dd_pct"],
+                             max_intratrade_dd_pct=(round(float(rows[-1]["intratrade_dd_pct_running"]),2)
+                               if rows else np.nan),
                              test_trades=perf_test["trades"],
                              test_return_pct=perf_test["return_pct"],
                              test_final_usd=perf_test["final_usd"]))
@@ -288,7 +292,7 @@ def main():
         g=df[(df.pair==pair.upper())&(df.sizing=="RISK_1PCT")].copy()
         g=g[(g.train_trades>80)&g.train_return_pct.notna()]
         if g.empty: continue
-        g=g.sort_values(["train_return_pct","max_closed_dd_pct"],ascending=[False,False])
+        g=g.sort_values(["train_return_pct","train_closed_dd_pct"],ascending=[False,False])
         selected.append(g.iloc[0].to_dict())
     pd.DataFrame(selected).to_csv(OUT/"train_selected_models.csv",index=False)
     print("TRAIN-ONLY winners (2019-2023). Test 2024+ not used for selection:",flush=True)
