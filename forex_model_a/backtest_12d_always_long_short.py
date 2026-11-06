@@ -100,15 +100,20 @@ def run_strategy(pair,d,blocks,label,side,leverage):
             bad=float(day.low) if side>0 else float(day.high)
             marked_open=cash+pnl_usd(pair,units,side,entry,openp)
             marked_bad=cash+pnl_usd(pair,units,side,entry,bad)
-            min_equity=min(min_equity,marked_open,marked_bad)
-            worst_dd=min(worst_dd, (min(marked_open,marked_bad)-peak)/peak*100)
             hit_at_open=marked_open<=min_allowed
             hit_intraday=marked_bad<=min_allowed
             if hit_at_open or hit_intraday:
+                # Use the MODELLED actual exit mark, not the day's later
+                # adverse high/low after the position is already closed.
                 exit_price=openp if hit_at_open else threshold
+                marked_exit=cash+pnl_usd(pair,units,side,entry,exit_price)
+                min_equity=min(min_equity,marked_exit)
+                worst_dd=min(worst_dd,(marked_exit-peak)/peak*100)
                 exit_date=day.date
                 reason="ILLUSTRATIVE_MARGIN_CLOSEOUT"
                 break
+            min_equity=min(min_equity,marked_open,marked_bad)
+            worst_dd=min(worst_dd, (min(marked_open,marked_bad)-peak)/peak*100)
             marked_close=cash+pnl_usd(pair,units,side,entry,float(day.close))
             peak=max(peak,marked_close)
             worst_dd=min(worst_dd,(marked_close-peak)/peak*100)
