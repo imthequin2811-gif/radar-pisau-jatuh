@@ -60,6 +60,10 @@ def ind_wma(s,n=7):
 def make_bars(d):
     b=base.calendar_bars(d,4).copy()
     b["full_4d"]=(b.end-b.start).dt.days==4
+    # Exclude year-end 1/2-day residual BEFORE calculating indicators.
+    # Otherwise a non-trading Dec 31 residual creates NaN and artificially
+    # erases 26 subsequent CCI20/WMA7 signals in the following year.
+    b=b[b.full_4d].copy().reset_index(drop=True)
     b["cci20"]=ind_cci_close(b.close,20)
     b["wma7"]=ind_wma(b.cci20,7)
     b["wma7_prev"]=b.wma7.shift(1)
