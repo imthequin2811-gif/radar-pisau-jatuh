@@ -1,0 +1,43 @@
+name: Forex Monthly Entry Next-Month Close Test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'forex_model_a/backtest_monthly_exit_next_month.py'
+      - '.github/workflows/forex_monthly_next_month_exit.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  monthly-next-month:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Setup Node for Dukascopy
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Python dependencies
+        run: pip install -r forex_model_a/requirements.txt
+      - name: Backtest next-month close and reentry after SL
+        working-directory: forex_model_a
+        run: python -u backtest_monthly_exit_next_month.py
+      - name: Commit CSV results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add forex_model_a/monthly_next_month_exit_results/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Forex next-month close SL reentry backtest"
+            git pull --rebase
+            git push
+          fi
