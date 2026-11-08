@@ -22,3 +22,15 @@ GitHub outputs yang harus dipertahankan:
 - `RADAR_SUMMARY.csv`, `STATUS.json`
 
 Status 8 November 2026: B tersedia, A belum memiliki ekspor TradingView; tidak diperkenankan merekayasa seri A.
+
+## LOCK SEMENTARA REVISI B + C (8 Nov 2026) — DISETUJUI PENGGUNA (opsi 1, 2, 3)
+
+- **Jangan tampilkan CCI dan WMA terpisah sebagai grafik utama.** Pakai **satu chart** dua garis: **B = GAP (CCI18 - WMA6)** dan **C = WMA6(CCI18)**; TF **6D CLOSED** tetap. Chart harus mudah diarahkan mouse ke masing-masing tanggal, bukan dashboard HTML eksternal.
+- Periode eksplorasi minimal **1 Jan 2022 s.d. CLOSED terakhir** dengan pemilih **2022 | 2023 | 2024 | 2025 | 2026** agar titik tidak bertumpuk. Default = tahun sekarang; jendela 4 bulan boleh sebagai zoom tambahan, bukan mengganti tampilan tahun.
+- **Label visual minimal dan tegas:** jika CCI cross WMA dari bawah ke atas saat **WMA6 ≤ -100**, tampilkan simbol / label **AKUMULASI?**; bila cross dari atas ke bawah saat **WMA6 ≥ +80**, **EXIT?**. Ini label *kandidat studi* untuk BTC/crypto, bukan order; crossover biasa tetap terekam di tabel tetapi tidak memenuhi grafik.
+- Warna sinyal: kandidat akumulasi hijau, kandidat exit merah; crossing normal diberi penanda kecil netral atau cukup tabel. Kedua garis GAP dan WMA selalu terlihat bersamaan. Level referensi: GAP = 0; WMA = −100 / +80 (level tidak boleh disamakan sebagai harga).
+- **Hover/titik** sebaiknya menampilkan tanggal CLOSED 6D UTC / WIB, GAP, WMA6, CCI18, cash kapitalisasi US$B dan Δcash 6D (kalau didukung); tanggal tidak boleh digeser ke awal candle. Klik untuk memilih tahun dan melihat daftar POI di bawah.
+- Sertakan **tiga sampel CLOSED terakhir**, ΔWMA, Δ²WMA, sudut, panah. Sinyal harus dihitung dari raw history dengan warm-up lintas tahun, bukan dari 4 bulan saja.
+- Metode B terverifikasi dari dataset GitHub. **Metode A (TOTAL−TOTALES) tetap MISSING** sampai TradingView CSV tersedia. Jangan salin B sebagai A.
+- Satu peringatan metodologis: *akumulasi* / *exit* di sini hanya tag eksperimen berdasarkan kapitalisasi stablecoin, bukan otomatis BUY/SELL BTC. Konfirmasi BTC belum diuji dalam radar ini.
+- Jangan ubah format B+C terkunci sementara atau parameter CCI18/WMA6/6D tanpa persetujuan.
