@@ -57,3 +57,9 @@ Pengguna menyukai tabel ZERO Crossing dengan checkbox Hanya zona ekstrem, tangga
 - Dua warna keluarga: zona TOP merah/oranye; zona BOTTOM hijau. Tingkat ekstrem wajib dapat dibaca dalam teks/angka, tidak bergantung pada warna saja. Penanda ↑/↓ membedakan slope (WMA naik/turun) dari crossing GAP.
 - **CATATAN DATA**: uji CCI12/WMA4 yang tampil sekarang bersumber dari kapitalisasi stablecoin Metode B, BUKAN Metode A. Jangan labeli sebagai hasil A, sebab pasangan seri TradingView TOTAL dan TOTALES belum tersedia. Setelah data A diperoleh, terapkan format sama pada A yang asli.
 - Format dengan filter zona ekstrem, tanggal, dan tingkatan ini LOCK; mengubah ambang batas filter, rumus atau tampilan tanggal memerlukan persetujuan pengguna.
+
+## Penyempurnaan LOCK: tanggal titik ZERO Crossing bisa dibaca langsung (8 November 2026)
+- Tooltip/chart bawaan yang hanya menunjukkan GAP/WMA/ZERO tanpa tanggal dianggap TIDAK memadai. Grafik harus memungkinkan pointer mouse memunculkan tanggal CLOSED 6D yang besar dan jelas di atas/di dekat titik, bukan perlu ditanyakan ke asisten.
+- Di atas grafik tampilkan tanggal yang sedang disorot, zona (TOP ekstrem, BOTTOM ekstrem, atau tengah), status CROSS UP/DOWN atau bukan crossing, nilai GAP, WMA4, delta WMA4; sentuh/geser pointer untuk eksplorasi, klik untuk menahan pilihan jika memungkinkan.
+- Tetap sediakan daftar tanggal crossover dengan filter Hanya zona ekstrem. 07 April, 24 Juni dan 21 Desember 2025 harus dapat dipelajari secara independen.
+- Catatan data wajib terlihat: seri CCI12/WMA4 yang telah ditampilkan adalah turunan Metode B (stablecoin), hanya proksi pembanding selama data asli A (TOTAL−TOTALES) tidak ada. Jangan salah sebut data proksi sebagai A.
