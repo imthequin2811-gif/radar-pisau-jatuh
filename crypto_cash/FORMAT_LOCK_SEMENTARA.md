@@ -44,3 +44,16 @@ Pengguna mengonfirmasi LOCK untuk format gabungan GAP + WMA6 + ZERO yang telah d
 4. Label kandidat AKUMULASI? hanya jika CROSS_UP dan WMA6 <= -100, dan EXIT? jika CROSS_DOWN dan WMA6 >= +80. Itu hipotesis likuiditas, belum valid sebagai keputusan BUY/SELL BTC.
 5. Selalu sertakan ringkasan tiga sampel CLOSED terakhir: cash, perubahan nominal, GAP, CCI18, WMA6, delta WMA, delta2 WMA, sudut, panah, tgl close terakhir/berikutnya. B = DefiLlama; A = TOTAL - TOTALES tetap MISSING bila TradingView CSV belum tersedia.
 6. Grafik sejarah sejak 2022 tidak boleh dihilangkan saat menyajikan zoom empat bulan. Format, indikator CCI18/WMA6, TF 6D CLOSED tidak boleh diubah tanpa izin pengguna.
+
+## LOCK TAMBAHAN — FILTER ZONA EKSTREM & TABEL TANGGAL 6D (8 Nov 2026)
+
+Pengguna menyukai tabel ZERO Crossing dengan checkbox Hanya zona ekstrem, tanggal CLOSED 6D dan WMA4; minta aturan visual dibedakan dan dikunci. Ini adalah lapisan EXPERIMEN CCI12/WMA4 6D, tanpa mengganti LOCK CCI18/WMA6 Metode B utama.
+
+- Wajib tampilkan dan pertahankan toggle **Hanya zona ekstrem**, aktif secara default saat mengulas crossing. Semua tanggal merujuk pada **close_utc** candle custom 6D dengan reset 1 Januari 00:00 UTC / 07:00 WIB; tidak boleh merekonstruksi tanggal dari indeks jika close_utc tersedia.
+- Semua crossing dicari dari GAP = CCI12 - WMA4(CCI12) yang berganti tanda melintasi ZERO pada CLOSED, bukan persilangan dengan kurva WMA4.
+- **FILTER ekstrem yang disetujui (jangan diam-diam ganti)**: hanya CROSS_DOWN saat WMA4 >= +80 (TOP) dan CROSS_UP saat WMA4 <= -100 (BOTTOM). Crossing lain disembunyikan bila filter aktif. User bisa mematikan checkbox untuk lihat semua.
+- Tambahkan kolom ZONA dan ΔWMA4 / arah WMA4, tanpa menghilangkan kolom asli tanggal CLOSED 6D, arah crossing, GAP, WMA4. Band zona TOP awal: +80 sampai kurang dari +100, TOP ekstrem: +100 sampai kurang dari +150, TOP sangat ekstrem: +150 atau lebih. BOTTOM ekstrem: -100 sampai lebih dari -150, BOTTOM sangat ekstrem: -150 atau kurang. Di antaranya netral.
+- Tanggal studi yang diberi tanda oleh pengguna: 2025-04-07 (CROSS_DOWN, WMA4 ~121.33, ΔWMA4 +3.91); 2025-06-24 (~107.61, ΔWMA4 -5.80); 2025-12-21 (~105.88, ΔWMA4 +8.69). **Ketiganya TOP ekstrem**, namun perhatikan beda SLOPE: 24 Juni negatif, dua lainnya positif. Zona dan slope tidak menjamin profit, hanya petunjuk momentum stablecoin.
+- Dua warna keluarga: zona TOP merah/oranye; zona BOTTOM hijau. Tingkat ekstrem wajib dapat dibaca dalam teks/angka, tidak bergantung pada warna saja. Penanda ↑/↓ membedakan slope (WMA naik/turun) dari crossing GAP.
+- **CATATAN DATA**: uji CCI12/WMA4 yang tampil sekarang bersumber dari kapitalisasi stablecoin Metode B, BUKAN Metode A. Jangan labeli sebagai hasil A, sebab pasangan seri TradingView TOTAL dan TOTALES belum tersedia. Setelah data A diperoleh, terapkan format sama pada A yang asli.
+- Format dengan filter zona ekstrem, tanggal, dan tingkatan ini LOCK; mengubah ambang batas filter, rumus atau tampilan tanggal memerlukan persetujuan pengguna.
