@@ -1,0 +1,46 @@
+name: Crypto Cash A/B CCI18 WMA6 Radar
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 2 * * *'  # 09:30 WIB (after daily dataset refresh)
+  push:
+    branches: [main]
+    paths:
+      - 'crypto_cash/build_crypto_cash.py'
+      - '.github/workflows/crypto_cash_daily.yml'
+      - 'data/crypto_cash/TV_TOTAL_1D.csv'
+      - 'data/crypto_cash/TV_TOTALES_1D.csv'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: crypto-cash-daily
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install numpy pandas matplotlib
+      - name: Build full-history 6D and 12D crypto cash radar
+        run: python crypto_cash/build_crypto_cash.py
+      - name: Publish daily CSV, status and visual charts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/crypto_cash/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Crypto Cash A/B CCI18 WMA6 data"
+            git pull --rebase
+            git push
+          fi
