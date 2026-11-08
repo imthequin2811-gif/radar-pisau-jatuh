@@ -9,6 +9,7 @@ on:
     paths:
       - 'crypto_cash/build_crypto_cash.py'
       - 'crypto_cash/make_historical_visuals.py'
+      - 'crypto_cash/build_bc_combined_locked.py'
       - '.github/workflows/crypto_cash_daily.yml'
       - 'data/crypto_cash/TV_TOTAL_1D.csv'
       - 'data/crypto_cash/TV_TOTALES_1D.csv'
@@ -37,6 +38,8 @@ jobs:
         run: python crypto_cash/build_crypto_cash.py
       - name: Build 2022-present 6D historical visual and date-indexed crossings
         run: python crypto_cash/make_historical_visuals.py
+      - name: Build LOCKED combined GAP plus WMA6 annual 6D charts (2022–present)
+        run: python crypto_cash/build_bc_combined_locked.py
       - name: Publish daily CSV, status and visual charts
         run: |
           git config user.name "github-actions[bot]"
