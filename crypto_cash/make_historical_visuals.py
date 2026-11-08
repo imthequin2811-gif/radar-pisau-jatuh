@@ -14,6 +14,39 @@ ROOT=Path(__file__).resolve().parents[1]
 DIR=ROOT / "data" / "crypto_cash"
 SOURCE=DIR / "B_6D_HISTORY.csv"
 
+
+def build_bc_locked(t):
+    """Locked 6D B+C+ZERO combined annual charts with exact source CLOSED dates."""
+    for year, d in t.groupby("year_start"):
+        d = d.sort_values("close_utc").copy()
+        d["gap"] = d.cci18 - d.wma6
+        fig, ax = plt.subplots(figsize=(15, 6))
+        ax.plot(d.close_utc, d.gap, lw=2, label="B: GAP (CCI18 - WMA6)", color="#2563eb", marker=".", markersize=4)
+        ax.plot(d.close_utc, d.wma6, lw=2, label="C: WMA6 on CCI18", color="#d97706", marker=".", markersize=4)
+        ax.axhline(0, color="#64748b", ls="--", lw=1.2, label="ZERO: CCI/WMA cross")
+        ac = d[(d.cross == "CCI_CROSS_UP") & (d.wma6 <= -100)]
+        ex = d[(d.cross == "CCI_CROSS_DOWN") & (d.wma6 >= 80)]
+        ax.scatter(ac.close_utc, ac.gap, marker="^", s=95, color="#16a34a", zorder=5, label="AKUMULASI? (study)")
+        ax.scatter(ex.close_utc, ex.gap, marker="v", s=95, color="#dc2626", zorder=5, label="EXIT? (study)")
+        for _, p in pd.concat([ac, ex]).iterrows():
+            ax.annotate(p.close_utc.strftime("%d %b"), (p.close_utc, p.gap),
+                textcoords="offset points", xytext=(0, 12 if p.cross == "CCI_CROSS_UP" else -18),
+                ha="center", fontsize=8)
+        ax.set_title(f"CRYPTO CASH B+C LOCKED | {year} | 6D CLOSED | ZERO")
+        ax.set_ylabel("CCI units (GAP & WMA)")
+        ax.grid(alpha=.22)
+        ax.xaxis.set_major_locator(mdates.MonthLocator(interval=2))
+        ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
+        ax.legend(loc="best", ncol=2, fontsize=8)
+        fig.autofmt_xdate()
+        fig.tight_layout()
+        fig.savefig(DIR / f"B_C_ZERO_LOCKED_6D_{year}.png", dpi=145)
+        plt.close(fig)
+    t[["close_utc", "start", "cap", "cci18", "wma6", "gap_cci_wma",
+       "flow_bn", "dwma", "d2wma", "angle", "cross", "arrow"]].to_csv(
+        DIR / "B_C_ZERO_LOCKED_6D_2022_NOW.csv", index=False)
+
+
 def main():
     if not SOURCE.is_file():
         raise SystemExit("Run build_crypto_cash.py first; B_6D_HISTORY.csv unavailable")
@@ -89,6 +122,7 @@ def main():
         ax.tick_params(axis="x",rotation=35)
     fig.savefig(DIR/"B_6D_USD_FLOW_2022_NOW.png",dpi=150,bbox_inches="tight")
     plt.close(fig)
+    build_bc_locked(t)
     print(f"Historical 6D output: {len(t)} CLOSED candles, {years[0]}–{years[-1]}; "
           f"{sum(t.cross_type!='NONE')} CCI/WMA crossings.")
 
