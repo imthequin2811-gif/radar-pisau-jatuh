@@ -34,3 +34,13 @@ Status 8 November 2026: B tersedia, A belum memiliki ekspor TradingView; tidak d
 - Metode B terverifikasi dari dataset GitHub. **Metode A (TOTAL−TOTALES) tetap MISSING** sampai TradingView CSV tersedia. Jangan salin B sebagai A.
 - Satu peringatan metodologis: *akumulasi* / *exit* di sini hanya tag eksperimen berdasarkan kapitalisasi stablecoin, bukan otomatis BUY/SELL BTC. Konfirmasi BTC belum diuji dalam radar ini.
 - Jangan ubah format B+C terkunci sementara atau parameter CCI18/WMA6/6D tanpa persetujuan.
+
+## LOCK GRAFIK B+C DIKOREKSI — 8 NOVEMBER 2026
+Pengguna mengonfirmasi LOCK untuk format gabungan GAP + WMA6 + ZERO yang telah dikoreksi. **Histori 2022 sampai candle 6D CLOSED terbaru WAJIB ada pada setiap scan** (2022, 2023, 2024, 2025, 2026, dan tahun berikutnya), tidak hanya 4 bulan.
+
+1. SATU grafik interaktif dalam chat: B = GAP (CCI18 - WMA6 on CCI); C = WMA6 pada CCI18; referensi horizontal ZERO = 0. Gunakan pemilih SEMUA dan masing-masing tahun supaya mouse/hover tanggal mudah dipakai. Jangan menggantikan format dengan dashboard HTML eksternal.
+2. Sinyal crossing yang benar hanya saat GAP melintasi ZERO (CCI18 cross WMA6). Crossing garis GAP dengan garis WMA BUKAN sinyal. Belokan WMA hanya slope/momentum.
+3. Gunakan tanggal kolom close_utc asli dari data/crypto_cash/B_6D_HISTORY.csv. Jangan konstruksi tanggal dari indeks titik; candle akhir tahun bisa kurang dari 6 hari dan harus diberi label sesuai panjang sesungguhnya. Tutup 00:00 UTC = 07:00 WIB.
+4. Label kandidat AKUMULASI? hanya jika CROSS_UP dan WMA6 <= -100, dan EXIT? jika CROSS_DOWN dan WMA6 >= +80. Itu hipotesis likuiditas, belum valid sebagai keputusan BUY/SELL BTC.
+5. Selalu sertakan ringkasan tiga sampel CLOSED terakhir: cash, perubahan nominal, GAP, CCI18, WMA6, delta WMA, delta2 WMA, sudut, panah, tgl close terakhir/berikutnya. B = DefiLlama; A = TOTAL - TOTALES tetap MISSING bila TradingView CSV belum tersedia.
+6. Grafik sejarah sejak 2022 tidak boleh dihilangkan saat menyajikan zoom empat bulan. Format, indikator CCI18/WMA6, TF 6D CLOSED tidak boleh diubah tanpa izin pengguna.
