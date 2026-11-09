@@ -1,0 +1,3 @@
+symbol,value,update,fetched_utc,source,unit
+AIOTUSDT_PERP.A,0.038045,1794218745652,2026-11-09T10:05:42.226852+00:00,Coinalyze,API native rate
+HOTUSDT_PERP.A,-0.377604,1794218745477,2026-11-09T10:05:42.226852+00:00,Coinalyze,API native rate

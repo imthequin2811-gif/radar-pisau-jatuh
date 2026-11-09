@@ -1,0 +1,22 @@
+{
+  "fetched_utc": "2026-11-09T10:05:42.226852+00:00",
+  "source": "https://api.coinalyze.net/v1",
+  "daily_history": true,
+  "closed_only": true,
+  "timeframes": [
+    4,
+    6,
+    12,
+    18
+  ],
+  "cci_length": 18,
+  "cci_source": "daily close of the metric",
+  "wma_length": 6,
+  "wma_source": "CCI18",
+  "angle": "degrees(atan(delta_WMA6 / 20))",
+  "aggregation": "Jan 1 00:00 UTC annual reset, continuous complete days only",
+  "selected_markets": 10,
+  "row_count": 120,
+  "funding_unit": "Coinalyze API native, do not assume % or 8H",
+  "price_comparison": "Use data/binance/*_1D_source.csv independently; never mix spot and futures"
+}
