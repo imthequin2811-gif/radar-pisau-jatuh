@@ -7,7 +7,7 @@ existing `build_radar.py`, or files under `data/radar`.
 
 - **Coinalyze official API** — futures and spot market catalogs, exchanges, current
   open interest, current/predicted funding, historical open interest, funding,
-  predicted funding, long/short liquidations, long/short ratio and futures OHLCV.
+  predicted funding, long/short liquidations, long/short ratio and futures OHLCV. Coinalyze also shows basis charts on its site,\n  but a direct basis-history API endpoint is not listed in the official v1 docs;\n  this bridge does not pretend to download unsupported metrics.
   Source: https://api.coinalyze.net/v1/doc/
 - **Existing GitHub CSV** — `data/binance/{BTC,ETH,SOL,BNB}USDT_1D_source.csv`.
   The CLOSED Binance **spot** price is joined by UTC date for side-by-side
@@ -40,7 +40,7 @@ existing `build_radar.py`, or files under `data/radar`.
 ## Activate GitHub workflow
 
 1. Sign in to https://coinalyze.net/ and generate your free official API key
-   via https://coinalyze.net/api/
+   via https://coinalyze.net/account/api-key/
 2. In this GitHub repository open **Settings > Secrets and variables >
    Actions > New repository secret**.
 3. Secret name **`COINALYZE_API_KEY`**, value = your Coinalyze API key.
