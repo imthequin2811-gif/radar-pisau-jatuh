@@ -132,6 +132,21 @@ def get_history(client: Coinalyze, endpoint: str, sym: str, from_ts: int, to_ts:
     return (result[0].get("history", []) if result else [])
 
 
+def read_binance_spot(base: str):
+    """CLOSED-only spot closes from the existing GitHub radar dataset, when present."""
+    path = ROOT / "data" / "binance" / f"{base}USDT_1D_source.csv"
+    if not path.exists():
+        return {}
+    closes = {}
+    with path.open(encoding="utf-8-sig", newline="") as stream:
+        for row in csv.DictReader(stream):
+            if row.get("status", "").upper() != "CLOSED":
+                continue
+            stamp = datetime.fromisoformat(row["open_time_utc"].replace("Z", "+00:00"))
+            closes[stamp.date()] = float(row["close"])
+    return closes
+
+
 def annual_buckets(daily: list[dict], tf: int, now: datetime):
     """Close-only, calendar-year Jan 1 UTC reset; never label partial buckets CLOSED."""
     daymap = {datetime.fromtimestamp(int(x["t"]), UTC).date(): float(x["c"])
@@ -182,6 +197,7 @@ def indicators(bars: list[dict], length: int = 18, wma_length: int = 6):
 def market_history(client: Coinalyze, m: dict, from_ts: int, to_ts: int, now: datetime, summary: list):
     sym = m["symbol"]
     base = str(m.get("base_asset", "UNKNOWN")).upper()
+    spot = read_binance_spot(base)
     for endpoint in HIST:
         if endpoint == "long-short-ratio-history" and not m.get("has_long_short_ratio_data"):
             continue
@@ -211,6 +227,11 @@ def market_history(client: Coinalyze, m: dict, from_ts: int, to_ts: int, now: da
             prev = valid[-2] if len(valid) > 1 else None
             prev_angle = prev["angle_deg"] if prev else None
             angle_delta = latest["angle_deg"] - prev_angle if latest["angle_deg"] is not None and prev_angle is not None else None
+            spot_date = (latest["end"] - timedelta(days=1)).date()
+            prev_spot_date = (prev["end"] - timedelta(days=1)).date() if prev else None
+            spot_now = spot.get(spot_date)
+            spot_prev = spot.get(prev_spot_date) if prev_spot_date else None
+            spot_change = ((spot_now / spot_prev - 1) * 100) if spot_now is not None and spot_prev else None
             summary.append({
                 "market": sym, "base_asset": base, "metric": endpoint,
                 "timeframe": f"{tf}D", "status": "CLOSED",
@@ -226,6 +247,10 @@ def market_history(client: Coinalyze, m: dict, from_ts: int, to_ts: int, now: da
                           "↑↘" if latest["delta"] >= 0 and latest["delta2"] < 0 else "↑↑")
                          if latest["delta"] is not None and latest["delta2"] is not None else "",
                 "source": "Coinalyze",
+                "spot_source": "GitHub data/binance CLOSED",
+                "spot_closed_date": spot_date.isoformat() if spot_now is not None else "",
+                "spot_price_close": spot_now if spot_now is not None else "",
+                "spot_change_vs_prev_tf_pct": spot_change if spot_change is not None else "",
                 "unit": "USD" if endpoint == "open-interest-history" else "Coinalyze API native",
             })
 
