@@ -48,3 +48,26 @@ Analisis awal dari GitHub `data/binance/*_1D_source.csv`: price-CCI18/WMA6 pada 
 - Format scan & studi Early/Late: `coinalyze/MASTER_LOCK_TIMING_EARLY_LATE_KESIMPULAN_FORMAT_2026-11-10.md`.
 - Studi historis angka: `coinalyze/research/TIMING_STUDY_EARLY_VS_LATE_2026-11-10.md`.
 - **Tidak mengubah** indikator, palette, posisi grafik, aksi auto-order, file collector, workflow GitHub, atau master lock lain. Dokumen ini menambah klarifikasi **KARAKTER PENGGUNA DAN PERAN CROSSING** yang baru saja disetujui.
+
+
+---
+
+## UPDATE USER-APPROVED — 10 NOVEMBER 2026: CARA MEMBACA MARKET SAAT SEMUA CCI HARGA 4D SUDAH BOTTOM
+
+**Dasar update:** tindak lanjut scan CLOSED tanggal 9 November 2026 (harga Binance Spot) dan snapshot OI/funding Coinalyze 10 November 11.04 WIB. Update ini **memperjelas operasional, tidak mengubah parameter/warna/aset/susunan visual/toleransi risiko**.
+
+1. **ZONE FIRST, DIRECTION SECOND, ENTRY LAST.** Area ekstrem adalah pintu gerbang **entry baru**. Atau dengan kata lain, `LONG/SHORT BIAS` ≠ `PLACE ORDER`. Karena pengguna hanya trading di area ujung gelombang, ketika *price CCI 4D berada di BOTTOM ≤−100*, output boleh tetap `BEARISH BIAS` namun **jangan menyarankan SHORT baru yang mengejar penurunan**. Cari tanda akhir tekanan untuk potensi LONG; bila 6D masih negatif kuat, status `BOTTOM WATCH / NOT YET LONG`. Prinsip simetris di TOP ≥+100: tidak mengejar LONG baru; cek SHORT/EXIT jika 6D, harga, dan konteks mendukung.
+2. **CROSSING hanya TAMBAHAN.** Cantumkan jenis data dan TF sebelum menyebut CROSS: `PRICE-CCI 4D`, `OI-CCI 6D`, `FUNDING-CCI 6D`. `CCI>WMA` yang sudah berlangsung bukan *fresh CROSS*. `slope WMA turun` juga bukan CROSS DOWN. PRA-CROSS, CCI-turn/HL/LH, crossing, WMA slope, Δ² dan price failure adalah observasi berbeda.
+3. **Empat status per aset per scan** harus eksplisit: `BOTTOM-WATCH` / `TOP-WATCH` / `EARLY` / `CONFIRM 6D` / `FALSE-CROSS` / `LATE` / `OUTSIDE ZONE NO ENTRY`, pilih yang paling sesuai dengan bukti CLOSED. Output harus menyertakan **tanggal CLOSED 4D, 6D, 12D, 18D** yang benar, dan jadwal close berikutnya WIB.
+4. **Skenario SOL LIMIT SHORT 91–93 (disepakati secara percakapan)** adalah **rencana harga bersyarat**, **BUKAN** izin entry otomatis. Seperti diingatkan pada scan terakhir, harga menyentuh limit tidak menjamin rebound sudah gagal; status CCI 4D harus diperiksa lagi ketika harga mendekati area itu. Jika order limit sudah aktif, identifikasi secara eksplisit risiko terisi sebelum konfirmasi; tidak menganggap order dijalankan oleh asisten. Area invalidasi struktur yang pernah dibahas ~$98.14 hanya hipotesis dari historis high 6D, bukan harga SL otomatis.
+5. **Contoh false signal 5→9 Nov 2026:** PRICE ETH 4D CLOSED 5 Nov memiliki CCI −45.18 > WMA −77.66 (fresh CROSS UP) setelah area bottom; tetapi 9 Nov CCI −197.82 < WMA −116.91 (fresh CROSS DOWN). Pada saat itu **PRICE WMA 6D masih menurun**, sehingga satu CROSS 4D tidak boleh langsung diberi label reversal. Perhatikan pertahanan low, pembentukan HL/LL, dan bentuk 6D sebelum SHOT utama.
+6. **Peringatan "jangan salah entry" bukan larangan analisis:** ketegasan asisten = memilih arah paling masuk akal dan, secara terpisah, memutuskan *no entry* jika lokasi pengguna salah, harga sudah LATE, atau sinyal 6D belum cukup. Jangan mengarang arah untuk memenuhi target transaksi.
+7. **Perbarui selalu nilai dari repositori pada scan berikutnya:** data contoh 9 Nov di bawah ini adalah *snapshot sejarah*, BUKAN angka current permanen:
+   - BTC price-CCI18 4D −145.07, price-WMA6 −54.46, Δ−43.37; OI-WMA6 6D 95.61 Δ−8.71.
+   - ETH price-CCI18 4D −197.82, price-WMA6 −116.91, Δ−39.25; OI-WMA6 6D −12.02 Δ−16.14.
+   - SOL price-CCI18 4D −160.42, price-WMA6 −97.92, Δ−34.37; OI-WMA6 6D 36.02 Δ−19.21.
+   - BNB price-CCI18 4D −141.31, price-WMA6 −65.60, Δ−36.81; OI-WMA6 6D 19.61 Δ−55.05.
+   - Pada 9 Nov 6D **PRICE WMA6 Δ masih negatif seluruh empat aset**; **belum ada LONG reversal yang terkonfirmasi**. CCI18 price 4D di BOTTOM bukan alasan entry LONG langsung.
+8. **Format LOCK tidak berubah:** grafik navy 6D OI empat aset selalu ditampilkan bersama dengan empat kartu hover dan crossing, tabel price 4D/6D, tabel OI/funding, konteks 12D/18D, **kesimpulan mandiri yang memisahkan bias vs kelayakan entry**, serta jadwal dan bukti candle.
+
+**Ingat:** latar ekstrem harga yang sedang menurun bukan setup SHORT entry milik pengguna, walaupun tren besar bearish. Ini konsistensi SOP, bukan klaim mengetahui arah masa depan.
