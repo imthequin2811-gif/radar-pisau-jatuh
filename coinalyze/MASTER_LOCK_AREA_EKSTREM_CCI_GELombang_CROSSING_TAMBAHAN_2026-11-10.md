@@ -97,3 +97,15 @@ Analisis awal dari GitHub `data/binance/*_1D_source.csv`: price-CCI18/WMA6 pada 
 - **Contoh keputusan mandiri:** `BIAS SHORT SOL` atas kekompakan pelemahan OI dan divergensi historis, dengan syarat `TIDAK MARKET SHORT LATE` jika area ekstrem entry tidak memenuhi SOP. Zona harga retest $91–93 yang dibahas user adalah ide bersyarat, **bukan order yang telah dibuat**, dan touching SELL LIMIT tidak membuktikan failed rally. Jangan mengubahnya menjadi rekomendasi market sell otomatis. Risiko OI 18D tetap positif / kemungkinan squeeze harus disebut.
 
 **LOCK integrity:** perubahan ini bersifat aditif, tidak mengganti indikator asli, komponen grafis navy gabungan, warna aset MASTER sebelumnya, file collector, ataupun workflow; berlaku hanya pada panel analisis OI tambahan dan cara menjelaskan keputusan.
+
+
+---
+
+## LOCK TAMBAHAN DISETUJUI 11 NOVEMBER 2026 — DUA PANEL OI + FUNDING
+Pengguna menyetujui **versi visual dua panel, masing-masing CCI18/WMA6 dihitung langsung dari data OI dan funding Coinalyze**, dengan **crossing dan timing TF 4D/6D/12D**, kemudian memerintahkan **"save, lock"**. Ini **tambahan permanen** yang tidak membatalkan grafik navy empat aset 6D, grafik OI-only, data harga sebagai validasi sekunder, atau strategi entry ekstrem pengguna.
+
+**Spesifikasi user-lock lengkap:** `coinalyze/MASTER_LOCK_DUAL_PANEL_OI_FUNDING_CCI18_WMA6_CROSSING_TIMING_2026-11-11.md`.
+
+**File grafik interaktif yang disimpan:** `coinalyze/visuals/MASTER_LOCK_DUAL_PANEL_OI_FUNDING_CCI18_WMA6_4D_6D_12D.html`.
+
+**Urutan pembacaan:** 4D EARLY → 6D keputusan → 12D arah besar; CCI↔WMA crossing dari OI dan funding masing-masing, tidak tertukar dengan CCI harga, dengan garis bayangan 30–60 hari **hipotetis** dan label CLOSED; keputusan LONG/SHORT proaktif tetapi ENTRY hanya bila timing serta area ekstrem pengguna terpenuhi. Jangan mengubah master ini atau format visual tanpa persetujuan pengguna.
