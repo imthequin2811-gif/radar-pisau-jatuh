@@ -71,3 +71,29 @@ Analisis awal dari GitHub `data/binance/*_1D_source.csv`: price-CCI18/WMA6 pada 
 8. **Format LOCK tidak berubah:** grafik navy 6D OI empat aset selalu ditampilkan bersama dengan empat kartu hover dan crossing, tabel price 4D/6D, tabel OI/funding, konteks 12D/18D, **kesimpulan mandiri yang memisahkan bias vs kelayakan entry**, serta jadwal dan bukti candle.
 
 **Ingat:** latar ekstrem harga yang sedang menurun bukan setup SHORT entry milik pengguna, walaupun tren besar bearish. Ini konsistensi SOP, bukan klaim mengetahui arah masa depan.
+
+
+---
+
+## UPDATE USER-APPROVED — 10 NOVEMBER 2026: OI-ONLY VISUAL 4D / 6D / 12D
+**User explicitly approved:** "di nilai dari cci wma oi crosing? bukan dari harga crypto" and "tambahkan, serta berikan kesimpulan, posisi yang kamu ambil. lock save."
+
+### LOCK: pemisahan sumber indikator utama
+- **Grafik tambahan untuk OI:** perhitungan CCI(18, Close OI futures Coinalyze) lalu WMA6 pada CCI18 OI. Tampilkan **4D, 6D, 12D** sebagai **pilihan timeframe pada panel besar yang bisa di-zoom / hover**, dengan BTC/ETH/SOL/BNB; data CLOSED only, TF reset 1 Jan 00:00 UTC. 18D tetap konteks tertulis pada radar master sebelumnya.
+- **Jangan memakai CCI harga crypto pada grafik OI tersebut.** Harga Binance Spot boleh ditambahkan hanya sebagai validasi sekunder/rencana entry dan risiko; sumber, skala, dan timestamp harus berbeda. Penilaian CROSS/DIVERGENSI pada panel OI **harus** dihitung dari OI itu sendiri.
+- **Crossing:** CCI OI menyeberang WMA6 OI antara dua CLOSED bar, ditandai ring hijau UP / merah DOWN pada garis CCI, lengkap dengan tanggal; PRA-CROSS dipisahkan. Jangan mencampurkan perubahan slope WMA, crossing CCI/WMA, dan crossing level 0.
+- **Divergensi di dalam OI:** bearish jika puncak nilai OI *lebih tinggi* tetapi puncak **CCI atas OI** *lebih rendah* pada dua swing high OI yang sudah terkonfirmasi (setidaknya satu bar CLOSED di kanan dan kiri); bullish simetris pada dua pivot low OI. Kedua garis pivot OI dan pivot CCI ditunjukkan jelas, dengan tanggal dan angka; tidak boleh mengklaim divergensi jika pivot belum terkonfirmasi. **Ini bukan divergensi harga-vs-CCI harga**.
+- **Bayangan 1–2 bulan:** dua garis putus-putus untuk skenario **CCI OI pulih** dan **CCI OI makin turun**, WMA6 lintasan skenario dihitung ulang. **JANGAN** menyebutnya fakta, forecast terkalibrasi, probabilitas, atau harga masa depan. Garis riwayat CLOSED tetap solid dan dipisahkan garis vertikal dari area bayangan.
+- **Visual besar minimal label penting:** latar navy, garis CCI OI cyan, WMA6 OI kuning, OI bawah putih, divergensi emas, bayangan pulih hijau, melemah merah, kontrol aset+TF, crosshair hover; deskripsi hanya singkat. **Bukan pengganti** grafik navy gabungan WMA6 6D empat aset dan kartu hover USER LOCKED yang tetap panel utama.
+- **Sumber dashboard HTML interaktif yang disimpan:** `coinalyze/visuals/MASTER_LOCK_OI_CCI18_WMA6_4D_6D_12D_CROSS_DIVERGENCE.html`. File ini merekam snapshot 9 November 2026; **refresh data setelah CSV berubah** dengan tetap menjaga desain dan metode, bukan dengan mengarang update.
+- **Posisi dinilai independen dari area entry:** asisten memilih satu bias aset/arah berdasarkan OI 4D/6D/12D, 18D konteks, crossing dan divergensi; baru setelah itu menilai timing dan batas area ekstrem yang sesuai kebiasaan user. **Harga hanya validasi sekunder dan level eksekusi**, bukan basis indikator OI.
+
+### Screenshot & hasil contoh yang mendukung (snapshot historical, bukan angka permanen)
+- **SOL OI 6D bearish divergence:** OI 29 Agustus 336.46 juta → 28 September 384.77 juta; CCI OI +293.50 → +190.26. OI WMA6 terakhir 55.24 → 36.02 pada 9 November (Δ −19.21).
+- **SOL OI 12D bearish divergence:** OI 29 Agustus 336.46 juta → 22 September 371.33 juta; CCI OI +267.94 → +244.70. WMA6 12D 134.63 → 100.72 (Δ −33.92).
+- **BTC OI 6D bearish divergence:** OI 22 September 2.553 miliar → 3 November 2.611 miliar; CCI OI +218.47 → +110.46. Namun OI WMA6 12D masih naik per 9 November; jangan otomatis memilih BTC sebagai SHORT utama.
+- **ETH OI 4D bearish divergence:** OI 22 September 1.710 miliar → 8 Oktober 1.720 miliar, CCI OI +187.03 → +146.36.
+- **Latest OI 9 November:** SOL OI 4D CCI −67.54/WMA −13.05; 6D −1.13/+36.02; 12D +41.18/+100.72. WMA seluruh 4D/6D/12D sedang menurun.
+- **Contoh keputusan mandiri:** `BIAS SHORT SOL` atas kekompakan pelemahan OI dan divergensi historis, dengan syarat `TIDAK MARKET SHORT LATE` jika area ekstrem entry tidak memenuhi SOP. Zona harga retest $91–93 yang dibahas user adalah ide bersyarat, **bukan order yang telah dibuat**, dan touching SELL LIMIT tidak membuktikan failed rally. Jangan mengubahnya menjadi rekomendasi market sell otomatis. Risiko OI 18D tetap positif / kemungkinan squeeze harus disebut.
+
+**LOCK integrity:** perubahan ini bersifat aditif, tidak mengganti indikator asli, komponen grafis navy gabungan, warna aset MASTER sebelumnya, file collector, ataupun workflow; berlaku hanya pada panel analisis OI tambahan dan cara menjelaskan keputusan.
