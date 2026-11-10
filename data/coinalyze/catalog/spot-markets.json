@@ -6168,14 +6168,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "BALUSD.C",
-    "exchange": "C",
-    "symbol_on_exchange": "BAL-USD",
-    "base_asset": "BAL",
-    "quote_asset": "USD",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "BTCEUR.A",
     "exchange": "A",
     "symbol_on_exchange": "BTCEUR",
@@ -20165,14 +20157,6 @@
     "symbol_on_exchange": "WOOEUR",
     "base_asset": "WOO",
     "quote_asset": "EUR",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "TNSRUSD.C",
-    "exchange": "C",
-    "symbol_on_exchange": "TNSR-USD",
-    "base_asset": "TNSR",
-    "quote_asset": "USD",
     "has_buy_sell_data": true
   },
   {
