@@ -1,0 +1,121 @@
+{
+  "asof": "2026-11-11",
+  "last_closed": "2026-11-09T00:00:00Z",
+  "contracts": "OKX perpetual Coinalyze",
+  "timing": [
+    {
+      "day": "2026-11-13",
+      "tf": "4D",
+      "type": "early gate"
+    },
+    {
+      "day": "2026-11-15",
+      "tf": "6D",
+      "type": "primary decision"
+    },
+    {
+      "day": "2026-11-17",
+      "tf": "4D",
+      "type": "review"
+    },
+    {
+      "day": "2026-11-21",
+      "tf": "6D+12D",
+      "type": "big trend validation"
+    }
+  ],
+  "assets": {
+    "BTC": {
+      "side": "SHORT WATCH",
+      "desc": "Prioritas SHORT teknikal jika support gagal direbut kembali. Jangan kejar harga yang sudah jatuh.",
+      "p": 74818.1,
+      "l4": 73511.5,
+      "mid4": 77198.95,
+      "mid6": 77355.7,
+      "mid12": 77727.95,
+      "runL": 72688.0,
+      "runP": 73769.4,
+      "roi6": -0.63,
+      "oiRun": 6.1,
+      "fund": 0.0063195,
+      "fRun": 0.01,
+      "f30": 77664.81,
+      "p15": 64803.82,
+      "p85": 92336.83,
+      "bt": 54.3,
+      "long": "LONG dibuka untuk evaluasi hanya jika 4D CLOSED di atas $77.199, lalu 6D CLOSED menguat di atas $77.356. Jangan menebak bottom sebelum itu.",
+      "short": "13 Nov: 4D CLOSED tetap di bawah $73.512, lalu retest $73.512 gagal. 15 Nov: 6D CLOSED tetap di bawah $73.512 dan OI koin-ekuivalen tidak turun tajam. Jika harga langsung jatuh tanpa retest: JANGAN KEJAR.",
+      "cancel": "Batal SHORT bila 4D CLOSED kembali di atas $73.512 sebelum retest gagal; konfirmasi pembalikan lebih kuat jika $77.199 direbut kembali.",
+      "priority": 1
+    },
+    "ETH": {
+      "side": "SHORT WATCH",
+      "desc": "OI koin 6D bertambah saat harga turun. Funding harian 10 Nov sudah negatif; waspadai short squeeze.",
+      "p": 2126.61,
+      "l4": 2068.0,
+      "mid4": 2251.94,
+      "mid6": 2259.565,
+      "mid12": 2259.565,
+      "runL": 2002.75,
+      "runP": 2052.15,
+      "roi6": 3.49,
+      "oiRun": 0.92,
+      "fund": 0.0025234,
+      "fRun": -0.0037194,
+      "f30": 2156.73,
+      "p15": 1904.85,
+      "p85": 2678.91,
+      "bt": 53.6,
+      "long": "LONG hanya jika 4D CLOSED berhasil pulih di atas $2.252 dan 6D CLOSED menegaskan di atas $2.260. Sekadar kembali ke $2.068 belum cukup.",
+      "short": "13 Nov: 4D CLOSED di bawah $2.068 dan terjadi retest gagal ke $2.068. 15 Nov: 6D CLOSED juga di bawah $2.068, tanpa squeeze naik. Jangan buka SHORT tepat pada dump.",
+      "cancel": "Batal SHORT bila 4D CLOSED kembali di atas $2.068 sebelum retest gagal; perubahan funding negatif memperbesar risiko squeeze.",
+      "priority": 2
+    },
+    "SOL": {
+      "side": "SHORT WATCH",
+      "desc": "OI koin di 6D berkurang, tetapi meningkat pada RUNNING 9–10 Nov sambil harga turun. Risiko squeeze tinggi.",
+      "p": 86.49,
+      "l4": 85.02,
+      "mid4": 91.04,
+      "mid6": 91.575,
+      "mid12": 94.425,
+      "runL": 81.25,
+      "runP": 83.3,
+      "roi6": -4.77,
+      "oiRun": 6.79,
+      "fund": 0.0039664,
+      "fRun": -0.001052,
+      "f30": 85.99,
+      "p15": 62.27,
+      "p85": 118.38,
+      "bt": 46.4,
+      "long": "LONG baru dievaluasi bila 4D CLOSED di atas $91,04 dan 6D CLOSED di atas $91,58. Model harga satu bulan paling lemah untuk SOL.",
+      "short": "13 Nov: 4D CLOSED di bawah $85,02 lalu retest gagal. 15 Nov: 6D CLOSED di bawah $85,02 dengan harga tetap menunjukkan lower high. OI yang meningkat belum tentu posisi SHORT.",
+      "cancel": "Batal SHORT jika 4D CLOSED merebut kembali $85,02 dan menguat; hindari leverage tinggi karena rentang proyeksi SOL lebar.",
+      "priority": 3
+    },
+    "BNB": {
+      "side": "LONG WATCH",
+      "desc": "FLUSH OI yang besar, tetapi harga sudah membuat low baru pada bagian RUNNING. LONG hanya setelah reclaim nyata.",
+      "p": 684.76,
+      "l4": 677.86,
+      "mid4": 699.77,
+      "mid6": 700.6,
+      "mid12": 719.755,
+      "runL": 669.54,
+      "runP": 680.29,
+      "roi6": -18.53,
+      "oiRun": -3.1,
+      "fund": 0.0020665,
+      "fRun": 0.005209,
+      "f30": 663.88,
+      "p15": 602.84,
+      "p85": 726.74,
+      "bt": 50.3,
+      "long": "13 Nov: 4D CLOSED kembali di atas $677,86 dan pelepasan OI mulai melambat; baru boleh menilai SHOT 1 kecil. 15 Nov: tambah/entry utama hanya jika 6D CLOSED di atas $700,60. 21 Nov: 12D di atas $719,76 memperkuat skenario.",
+      "short": "Jika 13 Nov 4D CLOSED masih di bawah $677,47, batalkan ide LONG. SHORT hanya dipertimbangkan setelah 15 Nov 6D CLOSED tetap di bawah $677,47 disertai retest gagal, bukan sekadar karena harga turun.",
+      "cancel": "Batal LONG awal jika 4D CLOSED tetap di bawah $677,86; low harian yang telah teramati $669,54 adalah peringatan risiko, bukan otomatis level stop yang siap dieksekusi.",
+      "priority": 1
+    }
+  }
+}
