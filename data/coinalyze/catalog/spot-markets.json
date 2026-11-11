@@ -14880,22 +14880,6 @@
     "has_buy_sell_data": false
   },
   {
-    "symbol": "STGUSD.F",
-    "exchange": "F",
-    "symbol_on_exchange": "STGUSD",
-    "base_asset": "STG",
-    "quote_asset": "USD",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "STGUSDT.F",
-    "exchange": "F",
-    "symbol_on_exchange": "STGUST",
-    "base_asset": "STG",
-    "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "DOTJPY.K",
     "exchange": "K",
     "symbol_on_exchange": "DOT/JPY",
@@ -22228,14 +22212,6 @@
     "exchange": "A",
     "symbol_on_exchange": "AMPUSDT",
     "base_asset": "AMP",
-    "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "AERODROMEUSD.P",
-    "exchange": "P",
-    "symbol_on_exchange": "AERODROME_USDT",
-    "base_asset": "AERODROME",
     "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
@@ -47428,6 +47404,38 @@
     "exchange": "P",
     "symbol_on_exchange": "CRCL_USDT",
     "base_asset": "CRCL",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "MSTRUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "MSTR_USDT",
+    "base_asset": "MSTR",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "AEROUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "AERO_USDT",
+    "base_asset": "AERO",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "TSLAUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "TSLA_USDT",
+    "base_asset": "TSLA",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "牛逼USD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "牛逼_USDT",
+    "base_asset": "牛逼",
     "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
