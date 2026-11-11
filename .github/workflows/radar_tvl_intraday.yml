@@ -2,6 +2,11 @@ name: Radar TVL DeFiLlama Intraday (4H 6H 8H 12H)
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/radar_tvl_intraday.yml'
+      - 'scripts/tvl_hourly_to_github.py'
   schedule:
     - cron: '23 * * * *'
 
