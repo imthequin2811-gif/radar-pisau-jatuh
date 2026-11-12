@@ -1,5 +1,5 @@
 {
-  "snapshot_utc": "2026-11-11",
+  "snapshot_utc": "2026-11-12",
   "source_B": "https://dataset.aethereal.top/files/stablecoin-market-cap-history.csv",
   "source_A": "MISSING - requires TV exports",
   "rules": "Close only; UTC year anchor; CCI18 of capitalization; WMA6 of CCI; angles atan(delta/20)",
