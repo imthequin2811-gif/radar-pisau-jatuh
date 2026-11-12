@@ -30400,6 +30400,14 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "NVDAUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "NVDA_USDT",
+    "base_asset": "NVDA",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "ZKFUSD.P",
     "exchange": "P",
     "symbol_on_exchange": "ZKF_USDT",
@@ -33284,6 +33292,14 @@
     "exchange": "6",
     "symbol_on_exchange": "TREEUSDT",
     "base_asset": "TREE",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "SKHYUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "SKHY_USDT",
+    "base_asset": "SKHY",
     "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
