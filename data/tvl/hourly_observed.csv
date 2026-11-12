@@ -1,2 +1,3 @@
 observed_utc,observed_unix_ms,observed_hour_utc,sum_chain_usd,chains_count,official_daily_latest_usd,official_daily_date_utc,gap_vs_official_pct,proxy_quality,source
 2026-11-11T22:59:14Z,1794437954296,2026-11-11T22:00:00Z,78574672245.40867615,423,78368368418.00000000,2026-11-11T00:00:00Z,0.26325,PROXY_CLOSE_5PCT,https://api.llama.fi/v2/chains;https://api.llama.fi/v2/historicalChainTvl
+2026-11-12T00:05:46Z,1794441946267,2026-11-12T00:00:00Z,78335995774.73837280,423,78133082379.00000000,2026-11-11T00:00:00Z,0.25970,PROXY_CLOSE_5PCT,https://api.llama.fi/v2/chains;https://api.llama.fi/v2/historicalChainTvl
