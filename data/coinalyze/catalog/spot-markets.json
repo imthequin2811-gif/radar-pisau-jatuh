@@ -46848,6 +46848,22 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "INTCUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "INTC_USDT",
+    "base_asset": "INTC",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "AMDUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "AMD_USDT",
+    "base_asset": "AMD",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "BNBCATUSD.P",
     "exchange": "P",
     "symbol_on_exchange": "BNBCAT_USDT",
@@ -47296,6 +47312,30 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "GOOGLUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "GOOGL_USDT",
+    "base_asset": "GOOGL",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "MIHAOUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "MIHAO_USDT",
+    "base_asset": "MIHAO",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "HYPEUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "HYPE_USDT",
+    "base_asset": "HYPE",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "DEXEUSD.P",
     "exchange": "P",
     "symbol_on_exchange": "DEXE_USDT",
@@ -47429,6 +47469,22 @@
     "symbol_on_exchange": "MSTR_USDT",
     "base_asset": "MSTR",
     "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "PEARLUSD.C",
+    "exchange": "C",
+    "symbol_on_exchange": "PEARL-USD",
+    "base_asset": "PEARL",
+    "quote_asset": "USD",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "PEARLUSD.K",
+    "exchange": "K",
+    "symbol_on_exchange": "PEARL/USD",
+    "base_asset": "PEARL",
+    "quote_asset": "USD",
     "has_buy_sell_data": true
   },
   {
