@@ -47488,6 +47488,22 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "NBISUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "NBIS_USDT",
+    "base_asset": "NBIS",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "BEUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "BE_USDT",
+    "base_asset": "BE",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "AEROUSD.P",
     "exchange": "P",
     "symbol_on_exchange": "AERO_USDT",
@@ -47504,11 +47520,27 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "MRNAUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "MRNA_USDT",
+    "base_asset": "MRNA",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "牛逼USD.P",
     "exchange": "P",
     "symbol_on_exchange": "牛逼_USDT",
     "base_asset": "牛逼",
     "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "ZKEUR.B",
+    "exchange": "B",
+    "symbol_on_exchange": "ZKEUR",
+    "base_asset": "ZK",
+    "quote_asset": "EUR",
     "has_buy_sell_data": true
   },
   {
