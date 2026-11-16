@@ -27640,6 +27640,14 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "XLAUSD.K",
+    "exchange": "K",
+    "symbol_on_exchange": "XLA/USD",
+    "base_asset": "XLA",
+    "quote_asset": "USD",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "sLDOUSDT.7",
     "exchange": "7",
     "symbol_on_exchange": "sLDOUSDT",
