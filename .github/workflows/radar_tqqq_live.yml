@@ -1,0 +1,46 @@
+name: Radar TQQQ VIX NDTH DXY — automatic data
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/radar_tqqq_live.yml'
+      - 'radar_tqqq/collect.py'
+      - 'radar_tqqq/test_collect.py'
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar-tqqq-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify quote and EOD separation
+        run: python -m unittest discover -s radar_tqqq -p 'test_*.py'
+      - name: Fetch timestamped quotes and accumulate actual NDTH history
+        run: python radar_tqqq/collect.py
+      - name: Commit only radar data
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/tqqq_radar/market-data.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Radar TQQQ: refresh dated quotes and EOD archive"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            sleep "$((attempt * 3))"
+          done
+          exit 1
