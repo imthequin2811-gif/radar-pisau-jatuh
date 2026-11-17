@@ -600,6 +600,14 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "INFIUSD.K",
+    "exchange": "K",
+    "symbol_on_exchange": "INFI/USD",
+    "base_asset": "INFI",
+    "quote_asset": "USD",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "COTITRY.A",
     "exchange": "A",
     "symbol_on_exchange": "COTITRY",
@@ -3784,14 +3792,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sSUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "SUSDC",
-    "base_asset": "S",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "ALGOETH.K",
     "exchange": "K",
     "symbol_on_exchange": "ALGO/ETH",
@@ -6328,14 +6328,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sARUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "ARUSDC",
-    "base_asset": "AR",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "DOTBTC.K",
     "exchange": "K",
     "symbol_on_exchange": "DOT/XBT",
@@ -7557,14 +7549,6 @@
     "symbol_on_exchange": "DGBUSDT",
     "base_asset": "DGB",
     "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "sNOTUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "NOTUSDC",
-    "base_asset": "NOT",
-    "quote_asset": "USDC",
     "has_buy_sell_data": true
   },
   {
@@ -10485,14 +10469,6 @@
     "symbol_on_exchange": "USDCUSDT",
     "base_asset": "USDC",
     "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "sAIXBTUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "AIXBTUSDC",
-    "base_asset": "AIXBT",
-    "quote_asset": "USDC",
     "has_buy_sell_data": true
   },
   {
@@ -23376,14 +23352,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sENSUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "ENSUSDC",
-    "base_asset": "ENS",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "CMEUSD.P",
     "exchange": "P",
     "symbol_on_exchange": "CME_USDT",
@@ -23632,14 +23600,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sORDIUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "ORDIUSDC",
-    "base_asset": "ORDI",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "AEVOEUR.K",
     "exchange": "K",
     "symbol_on_exchange": "AEVO/EUR",
@@ -23792,14 +23752,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sMEWUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "MEWUSDC",
-    "base_asset": "MEW",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "sONDOUSDC.6",
     "exchange": "6",
     "symbol_on_exchange": "ONDOUSDC",
@@ -23837,14 +23789,6 @@
     "symbol_on_exchange": "MAT/USD",
     "base_asset": "MAT",
     "quote_asset": "USD",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "sDOGSUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "DOGSUSDC",
-    "base_asset": "DOGS",
-    "quote_asset": "USDC",
     "has_buy_sell_data": true
   },
   {
@@ -24116,14 +24060,6 @@
     "exchange": "6",
     "symbol_on_exchange": "GMTUSDC",
     "base_asset": "GMT",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "sCHZUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "CHZUSDC",
-    "base_asset": "CHZ",
     "quote_asset": "USDC",
     "has_buy_sell_data": true
   },
@@ -25656,14 +25592,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sMANAUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "MANAUSDC",
-    "base_asset": "MANA",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "sDOTUSDC.6",
     "exchange": "6",
     "symbol_on_exchange": "DOTUSDC",
@@ -25861,14 +25789,6 @@
     "symbol_on_exchange": "HMSTRTRY",
     "base_asset": "HMSTR",
     "quote_asset": "TRY",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "sHMSTRUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "HMSTRUSDC",
-    "base_asset": "HMSTR",
-    "quote_asset": "USDC",
     "has_buy_sell_data": true
   },
   {
@@ -27816,6 +27736,22 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "QQQUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "QQQ_USDT",
+    "base_asset": "QQQ",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "TQQQUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "TQQQ_USDT",
+    "base_asset": "TQQQ",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "EDGEEUR.K",
     "exchange": "K",
     "symbol_on_exchange": "EDGE/EUR",
@@ -29220,6 +29156,14 @@
     "exchange": "7",
     "symbol_on_exchange": "sORDIUSDT",
     "base_asset": "ORDI",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "SOXLUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "SOXL_USDT",
+    "base_asset": "SOXL",
     "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
@@ -32784,6 +32728,14 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "USDCTHB.A",
+    "exchange": "A",
+    "symbol_on_exchange": "USDCTHB",
+    "base_asset": "USDC",
+    "quote_asset": "THB",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "MANTRATRY.A",
     "exchange": "A",
     "symbol_on_exchange": "MANTRATRY",
@@ -34668,14 +34620,6 @@
     "exchange": "C",
     "symbol_on_exchange": "W-USD",
     "base_asset": "W",
-    "quote_asset": "USD",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "NEONUSD.C",
-    "exchange": "C",
-    "symbol_on_exchange": "NEON-USD",
-    "base_asset": "NEON",
     "quote_asset": "USD",
     "has_buy_sell_data": true
   },
@@ -36896,14 +36840,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sDYDXUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "DYDXUSDC",
-    "base_asset": "DYDX",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "VIRTUALIDR.A",
     "exchange": "A",
     "symbol_on_exchange": "VIRTUALIDR",
@@ -38813,6 +38749,14 @@
     "symbol_on_exchange": "TRISG_USDT",
     "base_asset": "TRISG",
     "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "XLAEUR.K",
+    "exchange": "K",
+    "symbol_on_exchange": "XLA/EUR",
+    "base_asset": "XLA",
+    "quote_asset": "EUR",
     "has_buy_sell_data": true
   },
   {
@@ -45204,14 +45148,6 @@
     "exchange": "C",
     "symbol_on_exchange": "NOICE-USD",
     "base_asset": "NOICE",
-    "quote_asset": "USD",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "SYNDUSD.C",
-    "exchange": "C",
-    "symbol_on_exchange": "SYND-USD",
-    "base_asset": "SYND",
     "quote_asset": "USD",
     "has_buy_sell_data": true
   },
