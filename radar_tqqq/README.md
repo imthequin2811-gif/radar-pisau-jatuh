@@ -32,3 +32,21 @@ python radar_tqqq/collect.py --force-history
 Workflow `Radar TQQQ VIX NDTH DXY — automatic data` bisa dijalankan manual dengan **Run workflow**. Riwayat harian ditarik ulang tiap enam jam, quote tiap run. Workflow hanya melakukan commit ke `data/tqqq_radar/`; file crypto dan radar lain tidak diubah.
 
 Dashboard HTML unduhan tetap membawa snapshot offline dan mengambil pembaruan publik GitHub saat tersambung. Pembaruan otomatis tidak memerlukan login GitHub di HTML. Versi HTML lama yang hanya snapshot perlu diganti dengan versi otomatis.
+
+
+## NDTH history backfill — 17 November 2026
+
+The original EODData page exposed only recent daily rows. The archive now includes **5,024 actual daily INDEX:NDTH OHLC observations, 2006-12-29 through 2026-11-16**, obtained from [TradingView's public chart](https://www.tradingview.com/symbols/INDEX-NDTH/). This is the actual Nasdaq 100 Stocks Above 200-Day Average series, not a reconstruction using today's constituents.
+
+Validation: all 11 overlapping EODData rows matched OHLC exactly. An independent [50-row TradingView export on GitHub](https://github.com/Gabriele-Gurrera/z_Codici_finiti_e_ganzi/blob/95187f23f9b202188c911c9681ed3e43736d7909/modello_tv_NDTH_INDEX_1D.csv) also matched all OHLC values. Dates were unique and ordered, values stayed within 0–100%, and there were no gaps longer than seven calendar days. This cross-check does not independently audit every historical observation.
+
+The existing scheduled collector retains the full archive and appends completed daily EODData rows. NDTH remains EOD, not real-time. Backfill provenance and validation dates are stored in `assets.NDTH.historyArchive`.
+
+For a deliberate future history refresh:
+
+```bash
+python -m pip install 'websockets>=15,<16'
+python radar_tqqq/backfill_ndth.py
+```
+
+The optional backfill uses the anonymous public chart feed without credentials. It validates the resolved symbol, at least five overlapping recent EOD observations, OHLC bounds, duplicates, and gaps before writing. A rejected/unavailable feed leaves the existing archive untouched. The chart interface is unofficial and may change; the scheduled EOD collector does not depend on it.
