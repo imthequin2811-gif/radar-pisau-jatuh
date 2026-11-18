@@ -1168,6 +1168,14 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "KORUUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "KORU_USDT",
+    "base_asset": "KORU",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "BNBFDUSD.A",
     "exchange": "A",
     "symbol_on_exchange": "BNBFDUSD",
@@ -1285,6 +1293,14 @@
     "symbol_on_exchange": "SUIFDUSD",
     "base_asset": "SUI",
     "quote_asset": "FDUSD",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "SOXSUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "SOXS_USDT",
+    "base_asset": "SOXS",
+    "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
   {
@@ -1533,6 +1549,14 @@
     "symbol_on_exchange": "OP/USD",
     "base_asset": "OP",
     "quote_asset": "USD",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "SNXXUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "SNXX_USDT",
+    "base_asset": "SNXX",
+    "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
   {
@@ -32012,14 +32036,6 @@
     "exchange": "P",
     "symbol_on_exchange": "OKB_USDT",
     "base_asset": "OKB",
-    "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "SPOT_ECS_USDT.W",
-    "exchange": "W",
-    "symbol_on_exchange": "SPOT_ECS_USDT",
-    "base_asset": "ECS",
     "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
