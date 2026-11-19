@@ -45,10 +45,12 @@ existing `build_radar.py`, or files under `data/radar`.
    Actions > New repository secret**.
 3. Secret name **`COINALYZE_API_KEY`**, value = your Coinalyze API key.
    **Do not** commit, paste into chat, or publish the key.
-4. Merge the separate review PR when you're ready. Scheduled runs on
-   default branch are then automatic at 03:17 UTC (= 10:17 WIB).
-   The collector is skipped if the key is not configured. Run
-   **Actions > Coinalyze OI/Funding Bridge > Run workflow** to fetch manually.
+4. The default-branch workflow is scheduled daily at 00:00 UTC (07:00 WIB).
+   GitHub may queue the job after the scheduled start. The daily spot and
+   derivatives analysis appears in `data/coinalyze/DAILY_WIB.md` and in the
+   GitHub Actions run summary. Missing inputs are marked on the report.
+   Without the secret the derivatives refresh is skipped. Use
+   **Actions > Coinalyze OI/Funding Bridge > Run workflow** to run manually.
 5. Scan output:
    `data/coinalyze/RADAR_OI_FUNDING_CCI18_WMA6.csv`.
    Raw historical CSV, current snapshots and catalog files sit in sibling
