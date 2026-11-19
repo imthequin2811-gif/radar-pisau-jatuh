@@ -1,0 +1,41 @@
+name: Radar TQQQ v6 Treasury
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 0,6,12,18 * * 1-5'
+  push:
+    paths:
+      - 'radar_tqqq_v6/collect_bonds.py'
+      - 'radar_tqqq_v6/test_bonds.py'
+      - '.github/workflows/radar_tqqq_v6_bonds.yml'
+permissions:
+  contents: write
+concurrency:
+  group: radar-tqqq-v6-treasury
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify parser and preservation rules
+        run: python -m unittest discover -s radar_tqqq_v6 -p 'test_*.py'
+      - name: Refresh published Treasury observations
+        run: python radar_tqqq_v6/collect_bonds.py
+      - name: Commit only the Treasury feed
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/tqqq_radar/bonds.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'data: refresh official Treasury yields for v6'
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1
