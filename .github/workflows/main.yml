@@ -27,57 +27,7 @@ jobs:
           python-version: '3.12'
 
       - name: Download Binance OHLCV
-        shell: bash
-        run: |
-          python - <<'PY'
-          import csv
-          import json
-          import time
-          from datetime import datetime, timezone
-          from pathlib import Path
-          from urllib.request import urlopen
-
-          symbols = ["BTCUSDT", "ETHUSDT", "SOLUSDT", "BNBUSDT"]
-          folder = Path("data/binance")
-          folder.mkdir(parents=True, exist_ok=True)
-
-          columns = [
-              "open_time_utc", "open", "high", "low",
-              "close", "volume", "close_time_utc", "status"
-          ]
-
-          def utc(ms):
-              return datetime.fromtimestamp(
-                  ms / 1000, timezone.utc
-              ).strftime("%Y-%m-%dT%H:%M:%SZ")
-
-          for symbol in symbols:
-              url = (
-                  "https://data-api.binance.vision/api/v3/klines"
-                  f"?symbol={symbol}&interval=1d&limit=1000"
-              )
-              with urlopen(url, timeout=40) as response:
-                  candles = json.load(response)
-
-              if not isinstance(candles, list) or len(candles) < 600:
-                  raise RuntimeError(f"Invalid history: {symbol}")
-
-              now_ms = int(time.time() * 1000)
-              path = folder / f"{symbol}_1D_source.csv"
-
-              with path.open("w", newline="", encoding="utf-8") as f:
-                  writer = csv.writer(f)
-                  writer.writerow(columns)
-
-                  for k in candles:
-                      writer.writerow([
-                          utc(k[0]), k[1], k[2], k[3],
-                          k[4], k[5], utc(k[6] + 1),
-                          "CLOSED" if k[6] < now_ms else "RUNNING"
-                      ])
-
-              print(f"{symbol}: {len(candles)} candles saved")
-          PY
+        run: python refresh_binance_spot.py
 
       - name: Build CCI WMA radar
         run: python build_radar.py
