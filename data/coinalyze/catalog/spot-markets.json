@@ -1896,6 +1896,14 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "ANTBUSD.A",
+    "exchange": "A",
+    "symbol_on_exchange": "ANTBUSDT",
+    "base_asset": "ANTB",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "TURBOUSD.A",
     "exchange": "A",
     "symbol_on_exchange": "TURBOUSDT",
@@ -2093,6 +2101,14 @@
     "symbol_on_exchange": "PRIME/EUR",
     "base_asset": "PRIME",
     "quote_asset": "EUR",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "BFIUSD.K",
+    "exchange": "K",
+    "symbol_on_exchange": "BFI/USD",
+    "base_asset": "BFI",
+    "quote_asset": "USD",
     "has_buy_sell_data": true
   },
   {
@@ -7416,14 +7432,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sUSDTBRL.6",
-    "exchange": "6",
-    "symbol_on_exchange": "USDTBRL",
-    "base_asset": "USDT",
-    "quote_asset": "BRL",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "sPEOPLEUSDT.6",
     "exchange": "6",
     "symbol_on_exchange": "PEOPLEUSDT",
@@ -8397,14 +8405,6 @@
     "symbol_on_exchange": "KTA-USD",
     "base_asset": "KTA",
     "quote_asset": "USD",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "sUSDCBRL.6",
-    "exchange": "6",
-    "symbol_on_exchange": "USDCBRL",
-    "base_asset": "USDC",
-    "quote_asset": "BRL",
     "has_buy_sell_data": true
   },
   {
@@ -30880,14 +30880,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sCPOOLUSDT.6",
-    "exchange": "6",
-    "symbol_on_exchange": "CPOOLUSDT",
-    "base_asset": "CPOOL",
-    "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "USDRUSD.P",
     "exchange": "P",
     "symbol_on_exchange": "USDR_USDT",
@@ -38664,102 +38656,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "HFUN-USDC.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@1",
-    "base_asset": "HFUN",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "JEFF2-USDC.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@4",
-    "base_asset": "JEFF2",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "POINTS-USDC.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@8",
-    "base_asset": "POINTS",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "SCHIZO-USDC.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@23",
-    "base_asset": "SCHIZO",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "VAPOR-USDC.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@37",
-    "base_asset": "VAPOR",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "RAGE-USDC.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@49",
-    "base_asset": "RAGE",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "ATEHUN-USDC.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@51",
-    "base_asset": "ATEHUN",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "CATBAL-USDC.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@59",
-    "base_asset": "CATBAL",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "OMNIX-USDC.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@74",
-    "base_asset": "OMNIX",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "PIP2-USDC.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@85",
-    "base_asset": "PIP2",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "HYPE-USDC.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@107",
-    "base_asset": "HYPE",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "FARM-USDC.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@123",
-    "base_asset": "FARM",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "TRISGUSD.P",
     "exchange": "P",
     "symbol_on_exchange": "TRISG_USDT",
@@ -38920,7 +38816,7 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "PURR-USDC.H",
+    "symbol": "sPURRUSDC.H",
     "exchange": "H",
     "symbol_on_exchange": "PURR/USDC",
     "base_asset": "PURR2",
@@ -43608,14 +43504,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "SNDKBUSD.A",
-    "exchange": "A",
-    "symbol_on_exchange": "SNDKBUSDT",
-    "base_asset": "SNDKB",
-    "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "TSLABUSD.A",
     "exchange": "A",
     "symbol_on_exchange": "TSLABUSDT",
@@ -45640,6 +45528,30 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "s1.H",
+    "exchange": "H",
+    "symbol_on_exchange": "@1",
+    "base_asset": "HFUN",
+    "quote_asset": "USDC",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "s4.H",
+    "exchange": "H",
+    "symbol_on_exchange": "@4",
+    "base_asset": "JEFF2",
+    "quote_asset": "USDC",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "s8.H",
+    "exchange": "H",
+    "symbol_on_exchange": "@8",
+    "base_asset": "POINTS",
+    "quote_asset": "USDC",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "sBIRBUSDT.6",
     "exchange": "6",
     "symbol_on_exchange": "BIRBUSDT",
@@ -45656,6 +45568,46 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "s23.H",
+    "exchange": "H",
+    "symbol_on_exchange": "@23",
+    "base_asset": "SCHIZO",
+    "quote_asset": "USDC",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "s37.H",
+    "exchange": "H",
+    "symbol_on_exchange": "@37",
+    "base_asset": "VAPOR",
+    "quote_asset": "USDC",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "s49.H",
+    "exchange": "H",
+    "symbol_on_exchange": "@49",
+    "base_asset": "RAGE",
+    "quote_asset": "USDC",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "s51.H",
+    "exchange": "H",
+    "symbol_on_exchange": "@51",
+    "base_asset": "ATEHUN",
+    "quote_asset": "USDC",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "s59.H",
+    "exchange": "H",
+    "symbol_on_exchange": "@59",
+    "base_asset": "CATBAL",
+    "quote_asset": "USDC",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "sAMDONUSDT.7",
     "exchange": "7",
     "symbol_on_exchange": "sAMDONUSDT",
@@ -45669,6 +45621,22 @@
     "symbol_on_exchange": "sMSTRONUSDT",
     "base_asset": "MSTRON",
     "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "s74.H",
+    "exchange": "H",
+    "symbol_on_exchange": "@74",
+    "base_asset": "OMNIX",
+    "quote_asset": "USDC",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "s85.H",
+    "exchange": "H",
+    "symbol_on_exchange": "@85",
+    "base_asset": "PIP2",
+    "quote_asset": "USDC",
     "has_buy_sell_data": true
   },
   {
@@ -45701,6 +45669,22 @@
     "symbol_on_exchange": "NES_USDT",
     "base_asset": "NES",
     "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "s107.H",
+    "exchange": "H",
+    "symbol_on_exchange": "@107",
+    "base_asset": "HYPE",
+    "quote_asset": "USDC",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "s123.H",
+    "exchange": "H",
+    "symbol_on_exchange": "@123",
+    "base_asset": "FARM",
+    "quote_asset": "USDC",
     "has_buy_sell_data": true
   },
   {
@@ -47213,6 +47197,62 @@
     "symbol_on_exchange": "MDT-USD",
     "base_asset": "MDT2",
     "quote_asset": "USD",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "EWJBUSD.A",
+    "exchange": "A",
+    "symbol_on_exchange": "EWJBUSDT",
+    "base_asset": "EWJB",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "EWTBUSD.A",
+    "exchange": "A",
+    "symbol_on_exchange": "EWTBUSDT",
+    "base_asset": "EWTB",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "EWZBUSD.A",
+    "exchange": "A",
+    "symbol_on_exchange": "EWZBUSDT",
+    "base_asset": "EWZB",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "EWZSBUSD.A",
+    "exchange": "A",
+    "symbol_on_exchange": "EWZSBUSDT",
+    "base_asset": "EWZSB",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "IWMBUSD.A",
+    "exchange": "A",
+    "symbol_on_exchange": "IWMBUSDT",
+    "base_asset": "IWMB",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "MELIBUSD.A",
+    "exchange": "A",
+    "symbol_on_exchange": "MELIBUSDT",
+    "base_asset": "MELIB",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "NUBUSD.A",
+    "exchange": "A",
+    "symbol_on_exchange": "NUBUSDT",
+    "base_asset": "NUB",
+    "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
   {
