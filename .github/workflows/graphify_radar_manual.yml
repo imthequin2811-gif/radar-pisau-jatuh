@@ -1,0 +1,25 @@
+name: Graphify Radar Knowledge Graph
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  graphify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Install Graphify (local code parsing, no LLM)
+        run: uv tool install --python 3.12 graphifyy
+      - name: Build independent knowledge graph
+        run: |
+          mkdir -p graphify-out
+          graphify . 
+      - name: Upload graph without touching MASTER LOCK
+        uses: actions/upload-artifact@v4
+        with:
+          name: radar-graphify-index
+          path: graphify-out/
+          if-no-files-found: error
+          retention-days: 14
