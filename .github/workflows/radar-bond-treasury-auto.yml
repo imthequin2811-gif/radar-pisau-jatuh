@@ -1,0 +1,50 @@
+name: Bond Treasury 7-Tenor Auto Refresh
+on:
+  schedule:
+    # UTC: 01:23/04:23/07:23/13:23 = 08:23/11:23/14:23/20:23 WIB.
+    # Treasury usually publishes US sessions by 18:00 ET; schedules can be delayed.
+    - cron: "23 1,4,7,13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bond-treasury-7tenor-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Fetch official Treasury, fall back to verified history mirror, audit freshness
+        id: update
+        shell: bash
+        run: |
+          python research/radar-bond/scripts/update_treasury.py
+      - name: Commit only Radar Bond generated files when content changes
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/radar-bond/data/treasury_7tenor_latest.csv
+          git add research/radar-bond/data/treasury_7tenor_latest_status.json
+          if [ -f research/radar-bond/RADAR_BOND_02A_LATEST.html ]; then
+            git add research/radar-bond/RADAR_BOND_02A_LATEST.html
+          fi
+          if git diff --cached --quiet; then
+            echo "No new verified data to commit."
+          else
+            git commit -m "chore(bond): refresh Treasury 7-tenor yield source and 02A HTML"
+            git push
+          fi
