@@ -1,21 +1,32 @@
 {
-  "dataset": "US_TREASURY_7TENOR_PAR_YIELDS",
-  "status": "LATEST_SNAPSHOT_VERIFIED",
-  "latest_observation": "2026-11-20",
-  "latest_source": "US Treasury Daily Par Yield Curve Rates HTML 2026-11-20; CSV/XML official download not fetched this tool run",
-  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
-  "history_mirror": "https://github.com/fujiapple852/yield/blob/master/data/us_treasury_yield_curve_history.csv",
-  "history_mirror_last": "2026-11-19",
-  "mirror_git_sha": "0f4408d54b26eaadbdc23fa40c71b3db0ef33422",
-  "official_observation_sources": [
-    "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
-  ],
-  "as_of_utc": "2026-11-21T00:00:00Z",
-  "n_observations": 9228,
-  "units": "percent",
-  "is_yield_not_bond_price": true,
-  "holiday_zero_policy": "do not fill no-trade days; keep missing tenor blank",
-  "stale": false,
-  "refresh_mode": "manual verified snapshot, scheduled automatic code pending",
-  "audit_alpha_us10y": "separate comparison only, not replacement of Treasury par yield"
+  "data_type": "US_TREASURY_DAILY_PAR_YIELD_CURVE",
+  "status": "CURRENT",
+  "as_of_utc": "2026-11-20T23:57:12+00:00",
+  "last_observation_us_session": "2026-11-20",
+  "last_yields_pct": {
+    "2Y": 4.63,
+    "3Y": 4.65,
+    "5Y": 4.71,
+    "7Y": 4.8,
+    "10Y": 4.92,
+    "20Y": 5.34,
+    "30Y": 5.31
+  },
+  "2s10s_basis_points": 29.0,
+  "5s30s_basis_points": 60.0,
+  "records": 9228,
+  "days_since_latest_weekdays_approx": 0,
+  "source_latest": {
+    "github_mirror": "2026-11-19",
+    "treasury_csv_2025": "2025-12-31",
+    "treasury_csv_2026": "2026-11-20"
+  },
+  "source_errors": {},
+  "historical_source": "https://raw.githubusercontent.com/fujiapple852/yield/master/data/us_treasury_yield_curve_history.csv",
+  "primary_source": "U.S. Treasury official CSV/XML yearly endpoints",
+  "policy": "Never forward fill holiday/zero yield or substitute 10Y from another methodology.",
+  "dashboard_regenerated": true,
+  "changed_dates_this_run": 472,
+  "original_cache_rows": 9228,
+  "important": "Scheduled publication may lag or GitHub Actions may be disabled; verify workflow runs."
 }
