@@ -153,6 +153,8 @@ def refresh_dashboard():
     h = h.replace("data dibekukan 18 November 2026", "data diperbarui oleh sumber GitHub terjadwal")
     h = h.replace("tidak dibandingkan baris-per-baris dengan CSV Treasury resmi 2026",
                   "data resmi yang tersedia diprioritaskan; audit metadata di treasury_7tenor_latest_status.json")
+    h = h.replace("document.getElementById('freshness').textContent='TERISI '+raw.length+' SESI · terakhir '+raw.at(-1).date;",
+                  "const latestDay=raw.at(-1).date; const checkDay=new Date(latestDay+'T00:00:00Z'),td=new Date(now+'T00:00:00Z');let wd=0;for(let d=new Date(checkDay);d<td;d.setUTCDate(d.getUTCDate()+1)){const nx=new Date(d);nx.setUTCDate(nx.getUTCDate()+1);if(nx.getUTCDay()>0&&nx.getUTCDay()<6)wd++}document.getElementById('freshness').textContent=(wd>3?'DATA BASI — ':'TERISI ')+raw.length+' SESI · terakhir '+latestDay;")
     if not DASHBOARD.exists() or DASHBOARD.read_text(encoding="utf-8") != h:
         DASHBOARD.write_text(h, encoding="utf-8")
         return True
@@ -228,8 +230,23 @@ def main():
         "original_cache_rows":original_count,
         "important":"Scheduled publication may lag or GitHub Actions may be disabled; verify workflow runs."
     }
-    STATUS.write_text(json.dumps(status,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
-    print(json.dumps({"latest":last,"status":marker,"records":len(merged),"sources":sources,"errors":errors},indent=2))
+    # Avoid noisy commits for every scheduled check when observation data did not change.
+    old_status = {}
+    if STATUS.exists():
+        try:
+            old_status = json.loads(STATUS.read_text(encoding="utf-8"))
+        except (ValueError, OSError):
+            pass
+    same_data = (
+        old_status.get("last_observation_us_session") == status["last_observation_us_session"]
+        and old_status.get("last_yields_pct") == status["last_yields_pct"]
+        and old_status.get("records") == status["records"]
+        and old_status.get("status") == status["status"]
+        and old_status.get("source_latest") == status["source_latest"]
+    )
+    if not same_data:
+        STATUS.write_text(json.dumps(status,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    print(json.dumps({"checked_utc":now.isoformat(),"latest":last,"status":marker,"records":len(merged),"sources":sources,"errors":errors},indent=2))
     if stale:
         print("WARNING: Treasury snapshot stale; do not claim live signals.", file=sys.stderr)
         sys.exit(1)
