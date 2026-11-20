@@ -1,0 +1,21 @@
+{
+  "dataset": "US_TREASURY_7TENOR_PAR_YIELDS",
+  "status": "LATEST_SNAPSHOT_VERIFIED",
+  "latest_observation": "2026-11-20",
+  "latest_source": "US Treasury Daily Par Yield Curve Rates HTML 2026-11-20; CSV/XML official download not fetched this tool run",
+  "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
+  "history_mirror": "https://github.com/fujiapple852/yield/blob/master/data/us_treasury_yield_curve_history.csv",
+  "history_mirror_last": "2026-11-19",
+  "mirror_git_sha": "0f4408d54b26eaadbdc23fa40c71b3db0ef33422",
+  "official_observation_sources": [
+    "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+  ],
+  "as_of_utc": "2026-11-21T00:00:00Z",
+  "n_observations": 9228,
+  "units": "percent",
+  "is_yield_not_bond_price": true,
+  "holiday_zero_policy": "do not fill no-trade days; keep missing tenor blank",
+  "stale": false,
+  "refresh_mode": "manual verified snapshot, scheduled automatic code pending",
+  "audit_alpha_us10y": "separate comparison only, not replacement of Treasury par yield"
+}
