@@ -7080,14 +7080,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "HBARBNB.A",
-    "exchange": "A",
-    "symbol_on_exchange": "HBARBNB",
-    "base_asset": "HBAR",
-    "quote_asset": "BNB",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "HBARBTC.A",
     "exchange": "A",
     "symbol_on_exchange": "HBARBTC",
@@ -12696,11 +12688,11 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "GASTRY.A",
-    "exchange": "A",
-    "symbol_on_exchange": "GASTRY",
-    "base_asset": "GAS",
-    "quote_asset": "TRY",
+    "symbol": "MMTSUIUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "MMTSUI_USDT",
+    "base_asset": "MMTSUI",
+    "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
   {
@@ -16080,14 +16072,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "ZAMATRY.A",
-    "exchange": "A",
-    "symbol_on_exchange": "ZAMATRY",
-    "base_asset": "ZAMA",
-    "quote_asset": "TRY",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "DOTUSDC.A",
     "exchange": "A",
     "symbol_on_exchange": "DOTUSDC",
@@ -17508,14 +17492,6 @@
     "exchange": "C",
     "symbol_on_exchange": "MAGIC-USD",
     "base_asset": "MAGIC",
-    "quote_asset": "USD",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "PYRUSD.C",
-    "exchange": "C",
-    "symbol_on_exchange": "PYR-USD",
-    "base_asset": "PYR",
     "quote_asset": "USD",
     "has_buy_sell_data": true
   },
@@ -25920,14 +25896,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "STGUSD.C",
-    "exchange": "C",
-    "symbol_on_exchange": "STG-USD",
-    "base_asset": "STG",
-    "quote_asset": "USD",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "RLUSDUSD.K",
     "exchange": "K",
     "symbol_on_exchange": "RLUSD/USD",
@@ -34024,14 +33992,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "HIVETRY.A",
-    "exchange": "A",
-    "symbol_on_exchange": "HIVETRY",
-    "base_asset": "HIVE",
-    "quote_asset": "TRY",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "ASTERTHB.A",
     "exchange": "A",
     "symbol_on_exchange": "ASTERTHB",
@@ -38244,14 +38204,6 @@
     "exchange": "A",
     "symbol_on_exchange": "ORCATRY",
     "base_asset": "ORCA",
-    "quote_asset": "TRY",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "KSMTRY.A",
-    "exchange": "A",
-    "symbol_on_exchange": "KSMTRY",
-    "base_asset": "KSM",
     "quote_asset": "TRY",
     "has_buy_sell_data": true
   },
@@ -47176,6 +47128,14 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "PIEVERSEUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "PIEVERSE_USDT",
+    "base_asset": "PIEVERSE",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "NEXOUSD.K",
     "exchange": "K",
     "symbol_on_exchange": "NEXO/USD",
@@ -47528,10 +47488,34 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "VVVUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "VVV_USDT",
+    "base_asset": "VVV",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "牛逼USD.P",
     "exchange": "P",
     "symbol_on_exchange": "牛逼_USDT",
     "base_asset": "牛逼",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "sCLEARUSDT.6",
+    "exchange": "6",
+    "symbol_on_exchange": "CLEARUSDT",
+    "base_asset": "CLEAR",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "SNDKBUSD.A",
+    "exchange": "A",
+    "symbol_on_exchange": "SNDKBUSDT",
+    "base_asset": "SNDKB",
     "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
