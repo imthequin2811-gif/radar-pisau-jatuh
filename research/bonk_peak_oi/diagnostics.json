@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-23T01:54:13.499556+00:00",
+  "cmc_count": 2000,
+  "cmc_candidates": 204,
+  "scan_assets": 56,
+  "contracts_selected": 112,
+  "contracts_returned": 48,
+  "passes": 3,
+  "errors": [
+    "OI BTWUSDT.6,BTWUSDT.S,BTW_USDT.Y: invalid literal for int() with base 10: '3.523'",
+    "OI XDP_USDT.Y,CTUSDT_PERP.3,CTUSDT_PERP.A: invalid literal for int() with base 10: '4.536'"
+  ]
+}

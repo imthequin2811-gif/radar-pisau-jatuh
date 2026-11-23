@@ -1,0 +1,57 @@
+symbol,name,cmc_date_added,cmc_slug,market_cap_usd,volume24h_usd,peak_6h_close_aggregated_usd,peak_6h_utc,sum_6h_contract_high_upper_bound_usd,single_contract_peak_high_usd,contracts_with_history,contracts_selected,status
+NVDA,NVIDIA Tokenized Stock (Robinhood),2026-08-04,nvidia-tokenized-stock-robinhood,18977961,16351976,665031441,2026-11-17T06:00:00+00:00,771585382,505877232,5,8,PASS_PEAK_100M
+PONS,Pons,2026-07-28,pons,62635148,19230465,183267223,2026-09-09T00:00:00+00:00,187625349,124261288,6,8,PASS_PEAK_100M
+MSTR,Strategy Inc. Tokenized Stock (Robinhood),2026-08-04,strategy-inc-tokenized-stock-robinhood,6316619,7232890,153012181,2026-11-04T12:00:00+00:00,156423190,102101359,4,8,PASS_PEAK_100M
+BTW,Bitway,2025-12-21,bitway-btw,2097630105,6261101,178177114,2026-09-25T18:00:00+00:00,178484928,178484928,2,6,DATE_UNVERIFIED
+CASHCAT,Cash Cat,2026-07-08,cash-cat,42647807,20781845,88189409,2026-09-03T18:00:00+00:00,88313478,66462426,4,8,NOT_PROVEN
+MARSCOIN,MarsCoin,2026-07-30,marscoin-meme-bsc,29823485,16304698,59534392,2026-09-05T12:00:00+00:00,64036543,48881603,3,5,NOT_PROVEN
+牛来,牛来 (Niu Lai),2026-08-16,niu-lai,38331428,7378798,54417080,2026-09-11T06:00:00+00:00,57529378,49091584,3,5,NOT_PROVEN
+PRL,Perle,2026-03-23,perle,12606629,32714524,22066236,2026-04-28T06:00:00+00:00,23423955,14831793,4,7,NOT_PROVEN
+DOS,DAPPOS,2026-08-06,dappos,27972878,14975910,18303329,2026-10-28T12:00:00+00:00,18493207,10720836,3,5,NOT_PROVEN
+PROS,Pharos,2026-04-23,pharos,77417943,11725568,12019189,2026-11-18T18:00:00+00:00,12226024,8560426,3,5,NOT_PROVEN
+CP,Cluster Protocol,2026-08-27,cluster-protocol,9260076,27397170,6865865,2026-09-09T12:00:00+00:00,7657456,4733299,2,3,NOT_PROVEN
+DGAI,DGrid AI,2026-08-24,dgrid-ai,147512429,43289772,5599219,2026-11-22T12:00:00+00:00,6114204,3423011,2,3,NOT_PROVEN
+XDP,Doppler Finance,2026-08-03,doppler-finance,17633925,10809445,5312559,2026-10-11T00:00:00+00:00,5596520,3152271,2,4,NOT_PROVEN
+DNA,NeoSoul,2026-10-09,neosoul,14603981,16437229,4692472,2026-11-17T00:00:00+00:00,4772536,3077689,3,5,NOT_PROVEN
+UP,Unitas,2026-03-09,unitas,35782794,846216031,3486017,2026-05-15T06:00:00+00:00,3510699,3510699,1,3,NOT_PROVEN
+PEARL,Pearl (pearlresearch.ai),2026-08-18,pearlresearch,808466420,17444576,96968,2026-11-18T12:00:00+00:00,112805,112805,1,2,NOT_PROVEN
+ANTB,Anthropic Tokenized bStocks,2026-11-16,anthropic-tokenized-bstocks,7834976,118225926,0,,0,0,0,0,NOT_PROVEN
+SOXLB,Semicon Bull 3X ETF Tokenized bStocks,2026-07-06,semicon-bull-3x-etf-tokenized-bstocks,88987579,67967468,0,,0,0,0,0,NOT_PROVEN
+NVDAB,NVIDIA Tokenized bStocks,2026-06-11,nvidia-tokenized-bstocks,175692528,59860752,0,,0,0,0,0,NOT_PROVEN
+USDGO,USDGO,2026-03-13,usdgo,984031225,56744895,0,,0,0,0,0,NOT_PROVEN
+AI,Gensyn,2026-04-28,gensyn,20267367,31555948,0,,0,0,0,2,NOT_PROVEN
+MSTRB,Strategy Tokenized bStocks,2026-06-21,strategy-tokenized-bstocks,68381370,25080520,0,,0,0,0,0,NOT_PROVEN
+KORUB,South Korea Bull 3X ETF Tokenized bStocks,2026-07-20,south-korea-bull-3x-etf-tokenized-bstocks,16926510,22584069,0,,0,0,0,0,NOT_PROVEN
+MRNAB,Moderna Tokenized bStocks,2026-09-01,moderna-tokenized-bstocks,1930668,22554181,0,,0,0,0,0,NOT_PROVEN
+SNDKB,SanDisk Tokenized bStocks,2026-06-11,sandisk-tokenized-bstocks,50175984,21964105,0,,0,0,0,0,NOT_PROVEN
+NVDAC,NVIDIA Corporation Tokenized Stock (Coinbase),2026-10-08,nvidia-corporation-tokenized-stock-coinbase,8254490,21474651,0,,0,0,0,0,NOT_PROVEN
+SNDKC,Sandisk Corporation Tokenized Stock (Coinbase),2026-10-08,sandisk-corporation-tokenized-stock-coinbase,2239595,20271113,0,,0,0,0,0,NOT_PROVEN
+CT,Concrete,2026-09-08,concrete,24070099,19938698,0,,0,0,0,6,NOT_PROVEN
+INTCB,Intel Tokenized bStocks,2026-06-21,intel-tokenized-bstocks,43977791,16935690,0,,0,0,0,0,NOT_PROVEN
+MSTRC,Strategy Inc. Tokenized Stock (Coinbase),2026-10-08,strategy-inc-tokenized-stock-coinbase,1868452,15879553,0,,0,0,0,0,NOT_PROVEN
+CRCLB,Circle Internet Group Tokenized bStocks,2026-06-11,circle-internet-group-tokenized-bstocks,117577745,15802585,0,,0,0,0,0,NOT_PROVEN
+QQQB,Invesco QQQ Trust Tokenized bStocks,2026-07-02,invesco-qqq-trust-tokenized-bstocks,94876379,13826919,0,,0,0,0,0,NOT_PROVEN
+GOOGLC,Alphabet Inc. Tokenized Stock (Coinbase),2026-10-08,alphabet-inc-tokenized-stock-coinbase,10246156,12617830,0,,0,0,0,0,NOT_PROVEN
+METAC,Meta Platforms Inc. Tokenized Stock (Coinbase),2026-10-08,meta-platforms-inc-tokenized-stock-coinbase,5221809,11762183,0,,0,0,0,0,NOT_PROVEN
+BUBI,Bullbit PERP DEX,2026-06-23,bullbit-perp-dex,5240593,11589886,0,,0,0,0,0,NOT_PROVEN
+MUB,Micron Technology Tokenized bStocks,2026-06-11,micron-technology-tokenized-bstocks,74767440,11340216,0,,0,0,0,0,NOT_PROVEN
+AMZNC,Amazon.com Inc. Tokenized Stock (Coinbase),2026-10-08,amazoncom-inc-tokenized-stock-coinbase,2508923,11030031,0,,0,0,0,0,NOT_PROVEN
+SOXSB,Direxion Semiconductor Bear 3X ETF Tokenized bStocks,2026-07-28,direxion-semiconductor-bear-3x-etf-tokenized-bstocks,1613375,10412006,0,,0,0,0,0,NOT_PROVEN
+SNXXB,Tradr 2X Long SNDK ETF Tokenized bStocks,2026-07-20,tradr-2x-long-sndk-etf-tokenized-bstocks,7820505,10273306,0,,0,0,0,0,NOT_PROVEN
+MUC,Micron Technology Inc. Tokenized Stock (Coinbase),2026-10-08,micron-technology-inc-tokenized-stock-coinbase,1168890,9494382,0,,0,0,0,0,NOT_PROVEN
+SPY,SPDR S&P 500 Trust Tokenized ETF (Robinhood),2026-08-04,spdr-sp-500-trust-tokenized-etf-robinhood,18026431,9380799,0,,0,0,0,8,NOT_PROVEN
+USDSUI,USDsui,2026-03-13,usdsui,71492661,9126886,0,,0,0,0,0,NOT_PROVEN
+NBISB,Nebius Tokenized bStocks,2026-07-06,nebius-tokenized-bstocks,11438497,9111109,0,,0,0,0,0,NOT_PROVEN
+GOOGLB,Alphabet Tokenized bStocks,2026-07-06,alphabet-tokenized-bstocks,81442958,9087058,0,,0,0,0,0,NOT_PROVEN
+RMU,Micron Tokenized Stock (Reality),2026-07-02,micron-tokenized-stock-reality,4742871,9042001,0,,0,0,0,0,NOT_PROVEN
+RCRCL,Circle Tokenized Stock (Reality),2026-07-02,circle-tokenized-stock-reality,7642943,8949520,0,,0,0,0,0,NOT_PROVEN
+TSLAB,Tesla Tokenized bStocks,2026-06-11,tesla-tokenized-bstocks,17648638,8746044,0,,0,0,0,0,NOT_PROVEN
+RNVDA,NVIDIA Tokenized Stock (Reality),2026-07-02,nvidia-tokenized-stock-reality,13076520,8406478,0,,0,0,0,0,NOT_PROVEN
+GRVT,Grvt,2026-07-30,grvt,16621917,8266258,0,,0,0,0,5,NOT_PROVEN
+CAP,Cap,2026-06-26,cap-app,145950081,8083870,0,,0,0,0,6,NOT_PROVEN
+SPCXB,SpaceX Tokenized bStocks,2026-06-11,spacex-tokenized-bstocks,109397240,8033127,0,,0,0,0,0,NOT_PROVEN
+TQQQB,ProShares UltraPro QQQ Tokenized bStocks,2026-07-20,proshares-ultrapro-qqq-tokenized-bstocks,12530312,7249858,0,,0,0,0,0,NOT_PROVEN
+AAPLC,Apple Inc. Tokenized Stock (Coinbase),2026-10-08,apple-inc-tokenized-stock-coinbase,2116444,7187095,0,,0,0,0,0,NOT_PROVEN
+SPCXC,Space Exploration Technologies Corp. Tokenized Stock (Coinbase),2026-10-08,space-exploration-technologies-corp-tokenized-stock-coinbase,3946501,6913228,0,,0,0,0,0,NOT_PROVEN
+SKHYB,SK Hynix Tokenized bStocks,2026-07-09,sk-hynix-tokenized-bstocks,25765062,6800128,0,,0,0,0,0,NOT_PROVEN
+BNCB,BNB Standard Corporation Tokenized bStocks,2026-09-14,bnb-standard-corporation-tokenized-bstocks,25425704,6695523,0,,0,0,0,0,NOT_PROVEN
