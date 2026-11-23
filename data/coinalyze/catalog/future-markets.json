@@ -24612,20 +24612,6 @@
     "has_ohlcv_data": true
   },
   {
-    "symbol": "SOL_USDC-22NOV26.2",
-    "exchange": "2",
-    "symbol_on_exchange": "SOL_USDC-22NOV26",
-    "base_asset": "SOL",
-    "quote_asset": "USDC",
-    "expire_at": 1795334400000,
-    "has_buy_sell_data": true,
-    "is_perpetual": false,
-    "margined": "STABLE",
-    "oi_lq_vol_denominated_in": "BASE_ASSET",
-    "has_long_short_ratio_data": false,
-    "has_ohlcv_data": true
-  },
-  {
     "symbol": "SNOWUSDT_PERP.3",
     "exchange": "3",
     "symbol_on_exchange": "SNOW-USDT-SWAP",
@@ -25816,20 +25802,6 @@
     "has_ohlcv_data": true
   },
   {
-    "symbol": "TRX_USDC-22NOV26.2",
-    "exchange": "2",
-    "symbol_on_exchange": "TRX_USDC-22NOV26",
-    "base_asset": "TRX",
-    "quote_asset": "USDC",
-    "expire_at": 1795334400000,
-    "has_buy_sell_data": true,
-    "is_perpetual": false,
-    "margined": "STABLE",
-    "oi_lq_vol_denominated_in": "BASE_ASSET",
-    "has_long_short_ratio_data": false,
-    "has_ohlcv_data": true
-  },
-  {
     "symbol": "PERP_AUCTION_USDT.W",
     "exchange": "W",
     "symbol_on_exchange": "PERP_AUCTION_USDT",
@@ -25946,20 +25918,6 @@
     "exchange": "4",
     "symbol_on_exchange": "UNH-USDT",
     "base_asset": "UNH",
-    "quote_asset": "USDT",
-    "expire_at": null,
-    "has_buy_sell_data": true,
-    "is_perpetual": true,
-    "margined": "STABLE",
-    "oi_lq_vol_denominated_in": "BASE_ASSET",
-    "has_long_short_ratio_data": false,
-    "has_ohlcv_data": true
-  },
-  {
-    "symbol": "ACE_USDT.Y",
-    "exchange": "Y",
-    "symbol_on_exchange": "ACE_USDT",
-    "base_asset": "ACE",
     "quote_asset": "USDT",
     "expire_at": null,
     "has_buy_sell_data": true,
@@ -27980,6 +27938,20 @@
     "expire_at": null,
     "has_buy_sell_data": true,
     "is_perpetual": true,
+    "margined": "STABLE",
+    "oi_lq_vol_denominated_in": "BASE_ASSET",
+    "has_long_short_ratio_data": false,
+    "has_ohlcv_data": true
+  },
+  {
+    "symbol": "BTC_USDC-26NOV26.2",
+    "exchange": "2",
+    "symbol_on_exchange": "BTC_USDC-26NOV26",
+    "base_asset": "BTC",
+    "quote_asset": "USDC",
+    "expire_at": 1795680000000,
+    "has_buy_sell_data": true,
+    "is_perpetual": false,
     "margined": "STABLE",
     "oi_lq_vol_denominated_in": "BASE_ASSET",
     "has_long_short_ratio_data": false,
@@ -33278,6 +33250,20 @@
     "has_ohlcv_data": true
   },
   {
+    "symbol": "ETH-26NOV26.2",
+    "exchange": "2",
+    "symbol_on_exchange": "ETH-26NOV26",
+    "base_asset": "ETH",
+    "quote_asset": "USD",
+    "expire_at": 1795680000000,
+    "has_buy_sell_data": true,
+    "is_perpetual": false,
+    "margined": "COIN",
+    "oi_lq_vol_denominated_in": "QUOTE_ASSET",
+    "has_long_short_ratio_data": false,
+    "has_ohlcv_data": true
+  },
+  {
     "symbol": "MNT_USDT.Y",
     "exchange": "Y",
     "symbol_on_exchange": "MNT_USDT",
@@ -34182,6 +34168,20 @@
     "expire_at": null,
     "has_buy_sell_data": true,
     "is_perpetual": true,
+    "margined": "STABLE",
+    "oi_lq_vol_denominated_in": "BASE_ASSET",
+    "has_long_short_ratio_data": false,
+    "has_ohlcv_data": true
+  },
+  {
+    "symbol": "XRP_USDC-24NOV26.2",
+    "exchange": "2",
+    "symbol_on_exchange": "XRP_USDC-24NOV26",
+    "base_asset": "XRP",
+    "quote_asset": "USDC",
+    "expire_at": 1795507200000,
+    "has_buy_sell_data": true,
+    "is_perpetual": false,
     "margined": "STABLE",
     "oi_lq_vol_denominated_in": "BASE_ASSET",
     "has_long_short_ratio_data": false,
@@ -41636,20 +41636,6 @@
     "has_ohlcv_data": true
   },
   {
-    "symbol": "AVAX_USDC-22NOV26.2",
-    "exchange": "2",
-    "symbol_on_exchange": "AVAX_USDC-22NOV26",
-    "base_asset": "AVAX",
-    "quote_asset": "USDC",
-    "expire_at": 1795334400000,
-    "has_buy_sell_data": true,
-    "is_perpetual": false,
-    "margined": "STABLE",
-    "oi_lq_vol_denominated_in": "BASE_ASSET",
-    "has_long_short_ratio_data": false,
-    "has_ohlcv_data": true
-  },
-  {
     "symbol": "BWXT_USDT.Y",
     "exchange": "Y",
     "symbol_on_exchange": "BWXT_USDT",
@@ -41952,6 +41938,20 @@
     "expire_at": null,
     "has_buy_sell_data": true,
     "is_perpetual": true,
+    "margined": "STABLE",
+    "oi_lq_vol_denominated_in": "BASE_ASSET",
+    "has_long_short_ratio_data": false,
+    "has_ohlcv_data": true
+  },
+  {
+    "symbol": "HYPE_USDC-24NOV26.2",
+    "exchange": "2",
+    "symbol_on_exchange": "HYPE_USDC-24NOV26",
+    "base_asset": "HYPE",
+    "quote_asset": "USDC",
+    "expire_at": 1795507200000,
+    "has_buy_sell_data": true,
+    "is_perpetual": false,
     "margined": "STABLE",
     "oi_lq_vol_denominated_in": "BASE_ASSET",
     "has_long_short_ratio_data": false,
@@ -47866,20 +47866,6 @@
     "has_ohlcv_data": true
   },
   {
-    "symbol": "ETH_USDC-22NOV26.2",
-    "exchange": "2",
-    "symbol_on_exchange": "ETH_USDC-22NOV26",
-    "base_asset": "ETH",
-    "quote_asset": "USDC",
-    "expire_at": 1795334400000,
-    "has_buy_sell_data": true,
-    "is_perpetual": false,
-    "margined": "STABLE",
-    "oi_lq_vol_denominated_in": "BASE_ASSET",
-    "has_long_short_ratio_data": false,
-    "has_ohlcv_data": true
-  },
-  {
     "symbol": "42.T",
     "exchange": "T",
     "symbol_on_exchange": "42",
@@ -51730,20 +51716,6 @@
     "has_ohlcv_data": true
   },
   {
-    "symbol": "STRCUSDT.S",
-    "exchange": "S",
-    "symbol_on_exchange": "STRCUSDT",
-    "base_asset": "STRC",
-    "quote_asset": "USDT",
-    "expire_at": null,
-    "has_buy_sell_data": true,
-    "is_perpetual": true,
-    "margined": "STABLE",
-    "oi_lq_vol_denominated_in": "BASE_ASSET",
-    "has_long_short_ratio_data": false,
-    "has_ohlcv_data": true
-  },
-  {
     "symbol": "FILPERP.6",
     "exchange": "6",
     "symbol_on_exchange": "FILPERP",
@@ -54124,11 +54096,11 @@
     "has_ohlcv_data": true
   },
   {
-    "symbol": "pf_openaixusd.K",
-    "exchange": "K",
-    "symbol_on_exchange": "pf_openaixusd",
-    "base_asset": "OPENAIx",
-    "quote_asset": "USD",
+    "symbol": "LINUSDT_PERP.4",
+    "exchange": "4",
+    "symbol_on_exchange": "LIN-USDT",
+    "base_asset": "LIN",
+    "quote_asset": "USDT",
     "expire_at": null,
     "has_buy_sell_data": true,
     "is_perpetual": true,
@@ -54138,11 +54110,11 @@
     "has_ohlcv_data": true
   },
   {
-    "symbol": "LINUSDT_PERP.4",
-    "exchange": "4",
-    "symbol_on_exchange": "LIN-USDT",
-    "base_asset": "LIN",
-    "quote_asset": "USDT",
+    "symbol": "pf_openaixusd.K",
+    "exchange": "K",
+    "symbol_on_exchange": "pf_openaixusd",
+    "base_asset": "OPENAIx",
+    "quote_asset": "USD",
     "expire_at": null,
     "has_buy_sell_data": true,
     "is_perpetual": true,
@@ -58492,6 +58464,20 @@
     "has_ohlcv_data": true
   },
   {
+    "symbol": "TRX_USDC-24NOV26.2",
+    "exchange": "2",
+    "symbol_on_exchange": "TRX_USDC-24NOV26",
+    "base_asset": "TRX",
+    "quote_asset": "USDC",
+    "expire_at": 1795507200000,
+    "has_buy_sell_data": true,
+    "is_perpetual": false,
+    "margined": "STABLE",
+    "oi_lq_vol_denominated_in": "BASE_ASSET",
+    "has_long_short_ratio_data": false,
+    "has_ohlcv_data": true
+  },
+  {
     "symbol": "CSCOUSDT.S",
     "exchange": "S",
     "symbol_on_exchange": "CSCOUSDT",
@@ -60354,20 +60340,6 @@
     "has_ohlcv_data": true
   },
   {
-    "symbol": "XRP_USDC-22NOV26.2",
-    "exchange": "2",
-    "symbol_on_exchange": "XRP_USDC-22NOV26",
-    "base_asset": "XRP",
-    "quote_asset": "USDC",
-    "expire_at": 1795334400000,
-    "has_buy_sell_data": true,
-    "is_perpetual": false,
-    "margined": "STABLE",
-    "oi_lq_vol_denominated_in": "BASE_ASSET",
-    "has_long_short_ratio_data": false,
-    "has_ohlcv_data": true
-  },
-  {
     "symbol": "MARA_USDT.Y",
     "exchange": "Y",
     "symbol_on_exchange": "MARA_USDT",
@@ -60880,6 +60852,20 @@
     "expire_at": null,
     "has_buy_sell_data": true,
     "is_perpetual": true,
+    "margined": "STABLE",
+    "oi_lq_vol_denominated_in": "BASE_ASSET",
+    "has_long_short_ratio_data": false,
+    "has_ohlcv_data": true
+  },
+  {
+    "symbol": "SOL_USDC-24NOV26.2",
+    "exchange": "2",
+    "symbol_on_exchange": "SOL_USDC-24NOV26",
+    "base_asset": "SOL",
+    "quote_asset": "USDC",
+    "expire_at": 1795507200000,
+    "has_buy_sell_data": true,
+    "is_perpetual": false,
     "margined": "STABLE",
     "oi_lq_vol_denominated_in": "BASE_ASSET",
     "has_long_short_ratio_data": false,
@@ -62034,6 +62020,20 @@
     "has_ohlcv_data": true
   },
   {
+    "symbol": "AVAX_USDC-24NOV26.2",
+    "exchange": "2",
+    "symbol_on_exchange": "AVAX_USDC-24NOV26",
+    "base_asset": "AVAX",
+    "quote_asset": "USDC",
+    "expire_at": 1795507200000,
+    "has_buy_sell_data": true,
+    "is_perpetual": false,
+    "margined": "STABLE",
+    "oi_lq_vol_denominated_in": "BASE_ASSET",
+    "has_long_short_ratio_data": false,
+    "has_ohlcv_data": true
+  },
+  {
     "symbol": "120.T",
     "exchange": "T",
     "symbol_on_exchange": "120",
@@ -62296,20 +62296,6 @@
     "is_perpetual": true,
     "margined": "STABLE",
     "oi_lq_vol_denominated_in": "BASE_ASSET",
-    "has_long_short_ratio_data": false,
-    "has_ohlcv_data": true
-  },
-  {
-    "symbol": "ETH-22NOV26.2",
-    "exchange": "2",
-    "symbol_on_exchange": "ETH-22NOV26",
-    "base_asset": "ETH",
-    "quote_asset": "USD",
-    "expire_at": 1795334400000,
-    "has_buy_sell_data": true,
-    "is_perpetual": false,
-    "margined": "COIN",
-    "oi_lq_vol_denominated_in": "QUOTE_ASSET",
     "has_long_short_ratio_data": false,
     "has_ohlcv_data": true
   },
@@ -64372,6 +64358,20 @@
     "has_ohlcv_data": true
   },
   {
+    "symbol": "ETH_USDC-26NOV26.2",
+    "exchange": "2",
+    "symbol_on_exchange": "ETH_USDC-26NOV26",
+    "base_asset": "ETH",
+    "quote_asset": "USDC",
+    "expire_at": 1795680000000,
+    "has_buy_sell_data": true,
+    "is_perpetual": false,
+    "margined": "STABLE",
+    "oi_lq_vol_denominated_in": "BASE_ASSET",
+    "has_long_short_ratio_data": false,
+    "has_ohlcv_data": true
+  },
+  {
     "symbol": "VELVETUSDT.S",
     "exchange": "S",
     "symbol_on_exchange": "VELVETUSDT",
@@ -64956,6 +64956,20 @@
     "is_perpetual": true,
     "margined": "STABLE",
     "oi_lq_vol_denominated_in": "BASE_ASSET",
+    "has_long_short_ratio_data": false,
+    "has_ohlcv_data": true
+  },
+  {
+    "symbol": "BTC-26NOV26.2",
+    "exchange": "2",
+    "symbol_on_exchange": "BTC-26NOV26",
+    "base_asset": "BTC",
+    "quote_asset": "USD",
+    "expire_at": 1795680000000,
+    "has_buy_sell_data": true,
+    "is_perpetual": false,
+    "margined": "COIN",
+    "oi_lq_vol_denominated_in": "QUOTE_ASSET",
     "has_long_short_ratio_data": false,
     "has_ohlcv_data": true
   },
@@ -69650,20 +69664,6 @@
     "has_ohlcv_data": true
   },
   {
-    "symbol": "BTC-22NOV26.2",
-    "exchange": "2",
-    "symbol_on_exchange": "BTC-22NOV26",
-    "base_asset": "BTC",
-    "quote_asset": "USD",
-    "expire_at": 1795334400000,
-    "has_buy_sell_data": true,
-    "is_perpetual": false,
-    "margined": "COIN",
-    "oi_lq_vol_denominated_in": "QUOTE_ASSET",
-    "has_long_short_ratio_data": false,
-    "has_ohlcv_data": true
-  },
-  {
     "symbol": "pf_pythusd.K",
     "exchange": "K",
     "symbol_on_exchange": "pf_pythusd",
@@ -72024,20 +72024,6 @@
     "expire_at": null,
     "has_buy_sell_data": true,
     "is_perpetual": true,
-    "margined": "STABLE",
-    "oi_lq_vol_denominated_in": "BASE_ASSET",
-    "has_long_short_ratio_data": false,
-    "has_ohlcv_data": true
-  },
-  {
-    "symbol": "BTC_USDC-22NOV26.2",
-    "exchange": "2",
-    "symbol_on_exchange": "BTC_USDC-22NOV26",
-    "base_asset": "BTC",
-    "quote_asset": "USDC",
-    "expire_at": 1795334400000,
-    "has_buy_sell_data": true,
-    "is_perpetual": false,
     "margined": "STABLE",
     "oi_lq_vol_denominated_in": "BASE_ASSET",
     "has_long_short_ratio_data": false,
@@ -75776,20 +75762,6 @@
     "expire_at": null,
     "has_buy_sell_data": true,
     "is_perpetual": true,
-    "margined": "STABLE",
-    "oi_lq_vol_denominated_in": "BASE_ASSET",
-    "has_long_short_ratio_data": false,
-    "has_ohlcv_data": true
-  },
-  {
-    "symbol": "HYPE_USDC-22NOV26.2",
-    "exchange": "2",
-    "symbol_on_exchange": "HYPE_USDC-22NOV26",
-    "base_asset": "HYPE",
-    "quote_asset": "USDC",
-    "expire_at": 1795334400000,
-    "has_buy_sell_data": true,
-    "is_perpetual": false,
     "margined": "STABLE",
     "oi_lq_vol_denominated_in": "BASE_ASSET",
     "has_long_short_ratio_data": false,
