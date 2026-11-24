@@ -1,7 +1,7 @@
 {
   "data_type": "US_TREASURY_DAILY_PAR_YIELD_CURVE",
   "status": "CURRENT",
-  "as_of_utc": "2026-11-24T05:28:50+00:00",
+  "as_of_utc": "2026-11-24T08:40:04+00:00",
   "last_observation_us_session": "2026-11-23",
   "last_yields_pct": {
     "2Y": 4.63,
@@ -17,7 +17,7 @@
   "records": 9229,
   "days_since_latest_weekdays_approx": 1,
   "source_latest": {
-    "github_mirror": "2026-11-20",
+    "github_mirror": "2026-11-23",
     "treasury_csv_2025": "2025-12-31",
     "treasury_csv_2026": "2026-11-23"
   },
