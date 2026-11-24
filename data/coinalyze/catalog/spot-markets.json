@@ -312,14 +312,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "WSTUSDTUSD.P",
-    "exchange": "P",
-    "symbol_on_exchange": "WSTUSDT_USDT",
-    "base_asset": "WSTUSDT",
-    "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "sRENDERUSDT.6",
     "exchange": "6",
     "symbol_on_exchange": "RENDERUSDT",
@@ -1037,14 +1029,6 @@
     "symbol_on_exchange": "NES/USD",
     "base_asset": "NES",
     "quote_asset": "USD",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "sFLOKIUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "FLOKIUSDC",
-    "base_asset": "FLOKI",
-    "quote_asset": "USDC",
     "has_buy_sell_data": true
   },
   {
@@ -2204,14 +2188,6 @@
     "exchange": "A",
     "symbol_on_exchange": "KITEUSDC",
     "base_asset": "KITE",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "sTIAUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "TIAUSDC",
-    "base_asset": "TIA",
     "quote_asset": "USDC",
     "has_buy_sell_data": true
   },
@@ -12200,14 +12176,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sZKUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "ZKUSDC",
-    "base_asset": "ZK",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "sZKUSDT.6",
     "exchange": "6",
     "symbol_on_exchange": "ZKUSDT",
@@ -18416,14 +18384,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "FORTHUSD.C",
-    "exchange": "C",
-    "symbol_on_exchange": "FORTH-USD",
-    "base_asset": "FORTH",
-    "quote_asset": "USD",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "TNSRUSD.A",
     "exchange": "A",
     "symbol_on_exchange": "TNSRUSDT",
@@ -23704,14 +23664,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sSTXUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "STXUSDC",
-    "base_asset": "STX",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "STEEMUSD.A",
     "exchange": "A",
     "symbol_on_exchange": "STEEMUSDT",
@@ -24008,14 +23960,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sJASMYUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "JASMYUSDC",
-    "base_asset": "JASMY",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "sUNIUSDC.6",
     "exchange": "6",
     "symbol_on_exchange": "UNIUSDC",
@@ -24053,14 +23997,6 @@
     "symbol_on_exchange": "CBETH-ETH",
     "base_asset": "CBETH",
     "quote_asset": "ETH",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "sGMTUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "GMTUSDC",
-    "base_asset": "GMT",
-    "quote_asset": "USDC",
     "has_buy_sell_data": true
   },
   {
@@ -27560,6 +27496,14 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "CRESTUSD.F",
+    "exchange": "F",
+    "symbol_on_exchange": "CREST:USD",
+    "base_asset": "CREST",
+    "quote_asset": "USD",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "sLDOUSDT.7",
     "exchange": "7",
     "symbol_on_exchange": "sLDOUSDT",
@@ -27600,6 +27544,22 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "CRESTUSDT.F",
+    "exchange": "F",
+    "symbol_on_exchange": "CREST:UST",
+    "base_asset": "CREST",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "LBAFBTC.F",
+    "exchange": "F",
+    "symbol_on_exchange": "LBAF:BTC",
+    "base_asset": "LBAF",
+    "quote_asset": "BTC",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "FRAXUSD.A",
     "exchange": "A",
     "symbol_on_exchange": "FRAXUSDT",
@@ -27629,6 +27589,14 @@
     "symbol_on_exchange": "WLFI/EUR",
     "base_asset": "WLFI",
     "quote_asset": "EUR",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "LBAFUSD.F",
+    "exchange": "F",
+    "symbol_on_exchange": "LBAF:USD",
+    "base_asset": "LBAF",
+    "quote_asset": "USD",
     "has_buy_sell_data": true
   },
   {
@@ -28933,14 +28901,6 @@
     "symbol_on_exchange": "POL_USDT",
     "base_asset": "POL",
     "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "sCATIUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "CATIUSDC",
-    "base_asset": "CATI",
-    "quote_asset": "USDC",
     "has_buy_sell_data": true
   },
   {
@@ -41864,14 +41824,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sTOWNSUSDC.6",
-    "exchange": "6",
-    "symbol_on_exchange": "TOWNSUSDC",
-    "base_asset": "TOWNS",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "MAMOUSD.C",
     "exchange": "C",
     "symbol_on_exchange": "MAMO-USD",
@@ -47525,6 +47477,30 @@
     "symbol_on_exchange": "ZKEUR",
     "base_asset": "ZK",
     "quote_asset": "EUR",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "SNDKUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "SNDK_USDT",
+    "base_asset": "SNDK",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "MUUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "MU_USDT",
+    "base_asset": "MU",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "RAXOLUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "RAXOL_USDT",
+    "base_asset": "RAXOL",
+    "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
   {
