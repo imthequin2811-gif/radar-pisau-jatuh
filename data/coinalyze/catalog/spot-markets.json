@@ -38728,14 +38728,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sPURRUSDC.H",
-    "exchange": "H",
-    "symbol_on_exchange": "PURR/USDC",
-    "base_asset": "PURR2",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "PIVXUSD.P",
     "exchange": "P",
     "symbol_on_exchange": "PIVX_USDT",
@@ -45440,14 +45432,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "s4.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@4",
-    "base_asset": "JEFF2",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "s8.H",
     "exchange": "H",
     "symbol_on_exchange": "@8",
@@ -45532,14 +45516,6 @@
     "exchange": "H",
     "symbol_on_exchange": "@74",
     "base_asset": "OMNIX",
-    "quote_asset": "USDC",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "s85.H",
-    "exchange": "H",
-    "symbol_on_exchange": "@85",
-    "base_asset": "PIP2",
     "quote_asset": "USDC",
     "has_buy_sell_data": true
   },
@@ -47477,6 +47453,30 @@
     "symbol_on_exchange": "ZKEUR",
     "base_asset": "ZK",
     "quote_asset": "EUR",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "PAXGUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "PAXG_USDT",
+    "base_asset": "PAXG",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "KMNOUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "KMNO_USDT",
+    "base_asset": "KMNO",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "IRYSUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "IRYS_USDT",
+    "base_asset": "IRYS",
+    "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
   {
