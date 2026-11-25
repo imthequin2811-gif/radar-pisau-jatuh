@@ -1,32 +1,32 @@
 {
   "data_type": "US_TREASURY_DAILY_PAR_YIELD_CURVE",
   "status": "CURRENT",
-  "as_of_utc": "2026-11-24T08:40:04+00:00",
-  "last_observation_us_session": "2026-11-23",
+  "as_of_utc": "2026-11-25T02:32:03+00:00",
+  "last_observation_us_session": "2026-11-24",
   "last_yields_pct": {
     "2Y": 4.63,
-    "3Y": 4.69,
-    "5Y": 4.74,
-    "7Y": 4.81,
-    "10Y": 4.92,
+    "3Y": 4.67,
+    "5Y": 4.69,
+    "7Y": 4.79,
+    "10Y": 4.91,
     "20Y": 5.33,
-    "30Y": 5.29
+    "30Y": 5.3
   },
-  "2s10s_basis_points": 29.0,
-  "5s30s_basis_points": 55.0,
-  "records": 9229,
+  "2s10s_basis_points": 28.0,
+  "5s30s_basis_points": 61.0,
+  "records": 9230,
   "days_since_latest_weekdays_approx": 1,
   "source_latest": {
     "github_mirror": "2026-11-23",
     "treasury_csv_2025": "2025-12-31",
-    "treasury_csv_2026": "2026-11-23"
+    "treasury_csv_2026": "2026-11-24"
   },
   "source_errors": {},
   "historical_source": "https://raw.githubusercontent.com/fujiapple852/yield/master/data/us_treasury_yield_curve_history.csv",
   "primary_source": "U.S. Treasury official CSV/XML yearly endpoints",
   "policy": "Never forward fill holiday/zero yield or substitute 10Y from another methodology.",
-  "dashboard_regenerated": false,
-  "changed_dates_this_run": 473,
+  "dashboard_regenerated": true,
+  "changed_dates_this_run": 474,
   "original_cache_rows": 9229,
   "important": "Scheduled publication may lag or GitHub Actions may be disabled; verify workflow runs."
 }
