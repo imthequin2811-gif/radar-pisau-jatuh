@@ -1,13 +1,13 @@
-# Analisis harian kripto · 25-11-2026 · 07.00 WIB
+# Analisis harian kripto · 26-11-2026 · 07.00 WIB
 
-Candle 1D Binance dan Coinalyze bertanggal 2026-11-24 UTC. Perubahan dibandingkan dengan hari UTC sebelumnya.
+Candle 1D Binance dan Coinalyze bertanggal 2026-11-25 UTC. Perubahan dibandingkan dengan hari UTC sebelumnya.
 
 | Aset | Spot USDT | Spot 1D | Kontrak Coinalyze | OI 1D | Funding sebelumnya → terakhir | Pembacaan |
 |---|---:|---:|---|---:|---|---|
-| BTC | 59,832.00 | -2.35 | BTCUSDT_PERP.3 | +1.74 | +0.00538666 → +0.0055501 | Harga melemah, posisi bertambah |
-| ETH | 1,680.11 | -1.79 | ETHUSDT_PERP.3 | -0.69 | -0.00693205 → +0.0081079 | Harga melemah, posisi berkurang |
-| SOL | 69.69 | -3.25 | SOLUSDT_PERP.3 | -1.09 | -0.00811482 → +0.00517197 | Harga melemah, posisi berkurang |
-| BNB | 548.62 | -1.44 | BNBUSDT_PERP.3 | +1.79 | -0.00330463 → +0.01 | Harga melemah, posisi bertambah |
+| BTC | 60,458.01 | +1.05 | BTCUSDT_PERP.3 | +3.95 | +0.0055501 → +0.01 | Harga menguat, posisi bertambah |
+| ETH | 1,692.65 | +0.75 | ETHUSDT_PERP.3 | -2.68 | +0.0081079 → +0.00666447 | Pantulan dengan pengurangan posisi |
+| SOL | 70.47 | +1.12 | SOLUSDT_PERP.3 | -1.04 | +0.00517197 → +0.00702946 | Pantulan dengan pengurangan posisi |
+| BNB | 554.03 | +0.99 | BNBUSDT_PERP.3 | +0.51 | +0.01 → +0.00489336 | Harga menguat, posisi bertambah |
 
 Perubahan spot dan OI dalam persen. Funding memakai satuan asli API.
 Tanda — menunjukkan data untuk tanggal yang diperlukan belum tersedia.
