@@ -46968,6 +46968,46 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "COINUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "COIN_USDT",
+    "base_asset": "COIN",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "AVGOUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "AVGO_USDT",
+    "base_asset": "AVGO",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "BMNRUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "BMNR_USDT",
+    "base_asset": "BMNR",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "BNCUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "BNC_USDT",
+    "base_asset": "BNC",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "ANTUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "ANT_USDT",
+    "base_asset": "ANT",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "HYPEUSDC.A",
     "exchange": "A",
     "symbol_on_exchange": "HYPEUSDC",
