@@ -1,0 +1,43 @@
+{
+  "version": "C002E",
+  "status": "SOURCE_READBACK_AUDIT_ONLY",
+  "backtest": "BLOCKED",
+  "source_blob": "264c090e2154a1bddb2d916c0d553c824f252959",
+  "assets": {
+    "NDTH": {
+      "rows": 5031,
+      "first": "2006-12-29",
+      "last": "2026-11-25",
+      "structure_errors": 0,
+      "missing_vs_TQQQ": [
+        "2026-11-27"
+      ]
+    },
+    "TQQQ": {
+      "rows": 1736,
+      "first": "2020-01-02",
+      "last": "2026-11-27",
+      "structure_errors": 0
+    },
+    "VIX": {
+      "rows": 1769,
+      "first": "2020-01-02",
+      "last": "2026-11-26",
+      "structure_errors": 0
+    }
+  },
+  "older_TQQQ": {
+    "rows2018_19": 503,
+    "overlap": 1614,
+    "overlap_consistent": 1613,
+    "exception": "2026-06-04",
+    "max_relative_ohlc_difference": 0.013096820764570527,
+    "merged": false
+  },
+  "membership": {
+    "source": "floyds1995/Auto-Index-Constituents-Tracker",
+    "last_snapshot": "2026-10-09",
+    "status": "UNVERIFIED_EFFECTIVE_DATES_AND_TICKER_IDENTITY"
+  },
+  "daily_new_workflow": "NOT_RUN"
+}

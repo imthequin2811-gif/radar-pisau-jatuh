@@ -1,0 +1,36 @@
+name: LAB 15 free data - daily audit
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: lab15-free-data
+  cancel-in-progress: false
+jobs:
+  data-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r research/lab15/requirements.txt
+      - run: python research/lab15/collect_free.py --self-test
+      - name: Check daily free sources
+        run: python research/lab15/collect_free.py --cache "$RUNNER_TEMP/lab15" --status data/lab15/status.json
+      - name: Commit only audit metadata (no raw third-party price data)
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/lab15/status.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "LAB15: free source coverage audit"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            sleep "$((attempt * 3))"
+          done
+          exit 1
