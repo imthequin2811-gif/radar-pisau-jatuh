@@ -1,7 +1,7 @@
 {
   "data_type": "US_TREASURY_DAILY_PAR_YIELD_CURVE",
   "status": "CURRENT",
-  "as_of_utc": "2026-11-28T02:27:20+00:00",
+  "as_of_utc": "2026-11-28T05:24:51+00:00",
   "last_observation_us_session": "2026-11-27",
   "last_yields_pct": {
     "2Y": 4.69,
@@ -17,7 +17,7 @@
   "records": 9232,
   "days_since_latest_weekdays_approx": 0,
   "source_latest": {
-    "github_mirror": "2026-11-25",
+    "github_mirror": "2026-11-27",
     "treasury_csv_2025": "2025-12-31",
     "treasury_csv_2026": "2026-11-27"
   },
@@ -25,8 +25,8 @@
   "historical_source": "https://raw.githubusercontent.com/fujiapple852/yield/master/data/us_treasury_yield_curve_history.csv",
   "primary_source": "U.S. Treasury official CSV/XML yearly endpoints",
   "policy": "Never forward fill holiday/zero yield or substitute 10Y from another methodology.",
-  "dashboard_regenerated": true,
+  "dashboard_regenerated": false,
   "changed_dates_this_run": 476,
-  "original_cache_rows": 9231,
+  "original_cache_rows": 9232,
   "important": "Scheduled publication may lag or GitHub Actions may be disabled; verify workflow runs."
 }
