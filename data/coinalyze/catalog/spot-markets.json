@@ -9648,14 +9648,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sMBXUSDT.6",
-    "exchange": "6",
-    "symbol_on_exchange": "MBXUSDT",
-    "base_asset": "MBX",
-    "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "PRCLUSD.C",
     "exchange": "C",
     "symbol_on_exchange": "PRCL-USD",
@@ -22560,14 +22552,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sMCRTUSDT.6",
-    "exchange": "6",
-    "symbol_on_exchange": "MCRTUSDT",
-    "base_asset": "MCRT",
-    "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "GRINUSDT.Y",
     "exchange": "Y",
     "symbol_on_exchange": "GRIN_USDT",
@@ -35232,14 +35216,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sNSUSDT.6",
-    "exchange": "6",
-    "symbol_on_exchange": "NSUSDT",
-    "base_asset": "NS",
-    "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "ZEREBROUSD.P",
     "exchange": "P",
     "symbol_on_exchange": "ZEREBRO_USDT",
@@ -39672,14 +39648,6 @@
     "has_buy_sell_data": true
   },
   {
-    "symbol": "sOBTUSDT.6",
-    "exchange": "6",
-    "symbol_on_exchange": "OBTUSDT",
-    "base_asset": "OBT",
-    "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
     "symbol": "sREDUSDT.6",
     "exchange": "6",
     "symbol_on_exchange": "REDUSDT",
@@ -40692,14 +40660,6 @@
     "exchange": "P",
     "symbol_on_exchange": "GWEI_USDT",
     "base_asset": "GWEI",
-    "quote_asset": "USDT",
-    "has_buy_sell_data": true
-  },
-  {
-    "symbol": "sDIAMUSDT.6",
-    "exchange": "6",
-    "symbol_on_exchange": "DIAMUSDT",
-    "base_asset": "DIAM",
     "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
@@ -47208,11 +47168,27 @@
     "has_buy_sell_data": true
   },
   {
+    "symbol": "APPUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "APP_USDT",
+    "base_asset": "APP",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
     "symbol": "NEXOUSD.K",
     "exchange": "K",
     "symbol_on_exchange": "NEXO/USD",
     "base_asset": "NEXO",
     "quote_asset": "USD",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "INTWUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "INTW_USDT",
+    "base_asset": "INTW",
+    "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
   {
@@ -47229,6 +47205,22 @@
     "symbol_on_exchange": "MDT-USD",
     "base_asset": "MDT2",
     "quote_asset": "USD",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "PLTRUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "PLTR_USDT",
+    "base_asset": "PLTR",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "AAPLUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "AAPL_USDT",
+    "base_asset": "AAPL",
+    "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
   {
@@ -47284,6 +47276,102 @@
     "exchange": "A",
     "symbol_on_exchange": "NUBUSDT",
     "base_asset": "NUB",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "HOODUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "HOOD_USDT",
+    "base_asset": "HOOD",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "AMZNUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "AMZN_USDT",
+    "base_asset": "AMZN",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "MSFTUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "MSFT_USDT",
+    "base_asset": "MSFT",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "AAOIUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "AAOI_USDT",
+    "base_asset": "AAOI",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "ORCLUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "ORCL_USDT",
+    "base_asset": "ORCL",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "EWYUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "EWY_USDT",
+    "base_asset": "EWY",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "METAUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "META_USDT",
+    "base_asset": "META",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "BABAUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "BABA_USDT",
+    "base_asset": "BABA",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "LITEUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "LITE_USDT",
+    "base_asset": "LITE",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "SPYUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "SPY_USDT",
+    "base_asset": "SPY",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "DRAMUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "DRAM_USDT",
+    "base_asset": "DRAM",
+    "quote_asset": "USDT",
+    "has_buy_sell_data": true
+  },
+  {
+    "symbol": "MRVLUSD.P",
+    "exchange": "P",
+    "symbol_on_exchange": "MRVL_USDT",
+    "base_asset": "MRVL",
     "quote_asset": "USDT",
     "has_buy_sell_data": true
   },
